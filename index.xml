@@ -6,10 +6,19 @@
     <description>Recent content on hdzxs_blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Oct 2019 21:44:23 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 16 Oct 2019 22:54:27 +0800</lastBuildDate>
     
 	<atom:link href="https://hdzxs.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test</title>
+      <link>https://hdzxs.github.io/post/test/</link>
+      <pubDate>Wed, 16 Oct 2019 22:54:27 +0800</pubDate>
+      
+      <guid>https://hdzxs.github.io/post/test/</guid>
+      <description> test </description>
+    </item>
     
     <item>
       <title>建站初衷</title>
