@@ -106,7 +106,7 @@
     },
     "headline": "casper主题配置出现的问题和解决办法",
     "name": "casper主题配置出现的问题和解决办法",
-    "wordCount":  1023 ,
+    "wordCount":  1265 ,
     "timeRequired": "PT3M",
     "inLanguage": {
       "@type": "Language",
@@ -319,14 +319,24 @@ cd ..
 
 <p>&emsp; 赋予deploy.sh文件执行权限，之后执行./deploy.sh就可以了。</p>
 
-<h3 id="5-最后贴一下自己的成果图">5.最后贴一下自己的成果图：</h3>
+<h3 id="5-图片路径问题">5.图片路径问题</h3>
 
-<pre><code> ![image-20191028142819060](C:\Users\archer\Pictures\Screenshots\image-20191028142819060.png)
-</code></pre>
+<p>解决这个问题，主要是两个方面：</p>
 
-<p>&emsp;<img src="C:UsersarcherPicturesScreenshotsimage-20191028142835242.png" alt="image-20191028142835242" /> &emsp;</p>
+<p>第一、在config.toml中配置baseurl。作用是无论在本地还是发布出去，图片的路径都是相对于baseurl而言的。</p>
 
-<p>&emsp; 基本内容就这些，遇到的问题都不算难解决，但是都花了我不少时间。下一步可能还会弄些花里古哨的东西玩一下，比如点击特效之类的东西，如果遇到了问题，还会再做些记录。</p>
+<p>第二、在Markdown图片路径中，以static为根目录写全路径。</p>
+
+<p>示例：假设测试baseurl为<a href="http://localhost:1313/，图片位置：/static/img/hugo/123.png，那么在Markdown中写作![图片说明](/img/hugo/123.png)。这时，在浏览器就可以看到图片了">http://localhost:1313/，图片位置：/static/img/hugo/123.png，那么在Markdown中写作![图片说明](/img/hugo/123.png)。这时，在浏览器就可以看到图片了</a>
+。</p>
+
+<h3 id="6-最后贴一下自己的成果图">6.最后贴一下自己的成果图：</h3>
+
+<p><img src="https://hdzxs.github.io/images/image-20191028142819060.png" alt="image-20191028142819060" /></p>
+
+<p><img src="https://hdzxs.github.io/images/image-20191028142835242.png" alt="image-20191028142835242" /></p>
+
+<p>&emsp; 基本内容就这些，遇到的问题都不算难解决，但是都花了我不少时间。下一步可能还会弄些花里古哨的东西玩一下，比如点击特效之类的东西，如果遇到了问题，还会再做些记录。</p>
     </section>
 
 
