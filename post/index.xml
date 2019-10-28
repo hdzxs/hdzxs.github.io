@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <copyright>All rights reserved - 2019</copyright>
-    <lastBuildDate>Tue, 22 Oct 2019 21:09:27 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 28 Oct 2019 13:41:24 +0800</lastBuildDate>
     
 	<atom:link href="https://hdzxs.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>casper主题配置出现的问题和解决办法</title>
+      <link>https://hdzxs.github.io/2019/10/28/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
+      <pubDate>Mon, 28 Oct 2019 13:41:24 +0800</pubDate>
+      
+      <guid>https://hdzxs.github.io/2019/10/28/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
+      <description>&lt;p&gt;&amp;emsp; 上一周花了好久终于弄懂了hugo中的主题是怎么用的，配置过程不算复杂，但初次尝试还是遇到了许多问题，这里做个记录。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>话多树洞 19.10.22</title>
