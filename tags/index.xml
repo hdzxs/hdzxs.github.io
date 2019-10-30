@@ -7,15 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <copyright>All rights reserved - 2019</copyright>
-    <lastBuildDate>Wed, 30 Oct 2019 16:17:49 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 30 Oct 2019 17:02:26 +0800</lastBuildDate>
     
 	<atom:link href="https://hdzxs.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>hugo</title>
+      <link>https://hdzxs.github.io/tags/hugo/</link>
+      <pubDate>Wed, 30 Oct 2019 17:02:26 +0800</pubDate>
+      
+      <guid>https://hdzxs.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>study</title>
       <link>https://hdzxs.github.io/tags/study/</link>
-      <pubDate>Wed, 30 Oct 2019 16:17:49 +0800</pubDate>
+      <pubDate>Wed, 30 Oct 2019 17:02:26 +0800</pubDate>
       
       <guid>https://hdzxs.github.io/tags/study/</guid>
       <description></description>

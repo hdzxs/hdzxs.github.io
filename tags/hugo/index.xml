@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Study on Cooper&#39;s Blog</title>
-    <link>https://hdzxs.github.io/categories/study/</link>
-    <description>Recent content in Study on Cooper&#39;s Blog</description>
+    <title>hugo on Cooper&#39;s Blog</title>
+    <link>https://hdzxs.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on Cooper&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <copyright>All rights reserved - 2019</copyright>
     <lastBuildDate>Wed, 30 Oct 2019 17:02:26 +0800</lastBuildDate>
     
-	<atom:link href="https://hdzxs.github.io/categories/study/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hdzxs.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -22,30 +22,12 @@
     </item>
     
     <item>
-      <title>蓝桥杯练习——小计算器</title>
-      <link>https://hdzxs.github.io/2019/10/30/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B0%8F%E8%AE%A1%E7%AE%97%E5%99%A8/</link>
-      <pubDate>Wed, 30 Oct 2019 16:17:49 +0800</pubDate>
-      
-      <guid>https://hdzxs.github.io/2019/10/30/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B0%8F%E8%AE%A1%E7%AE%97%E5%99%A8/</guid>
-      <description>&lt;p&gt;&amp;emsp; 昨天花了一个晚上做了小计算器这个练习题，中间出现了好多问题，在这里记录下来。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>casper主题配置出现的问题和解决办法</title>
       <link>https://hdzxs.github.io/2019/10/28/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
       <pubDate>Mon, 28 Oct 2019 13:41:24 +0800</pubDate>
       
       <guid>https://hdzxs.github.io/2019/10/28/%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
       <description>&lt;p&gt;&amp;emsp; 上一周花了好久终于弄懂了hugo中的主题是怎么用的，配置过程不算复杂，但初次尝试还是遇到了许多问题，这里做个记录。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>蓝桥杯练习 10.22</title>
-      <link>https://hdzxs.github.io/2019/10/22/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%BB%83%E4%B9%A0-10.22/</link>
-      <pubDate>Tue, 22 Oct 2019 21:09:10 +0800</pubDate>
-      
-      <guid>https://hdzxs.github.io/2019/10/22/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%BB%83%E4%B9%A0-10.22/</guid>
-      <description>&lt;p&gt;&amp;emsp; 果然啊，真的动手做点什么就会感受到卑微，最简单的入门题也能写出各种问题，我也是醉了，而且好多我还是真的不会，这里记下一些东西吧。&lt;/p&gt;</description>
     </item>
     
   </channel>
