@@ -30,7 +30,7 @@ figcaption, figure,
 footer, header, hgroup,
 main, nav, section,
 summary { display: block; }
-audio, canvas, video { display: inline-block; }
+audio, canvas, video { display: inline-block;}
 audio:not([controls]) { display: none; height: 0; }
 [hidden], template { display: none; }
 html {
@@ -105,6 +105,7 @@ table { border-collapse: collapse; border-spacing: 0; }
    ========================================================================== */
 
 /* Import the font files */
+
 @font-face {
   font-family: 'Open Sans';
   src: local('Open Sans'), local('OpenSans'), url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
@@ -2133,7 +2134,6 @@ body:not(.post-template) .post-title {
     width: 100%;
   }
 }
-
 
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
