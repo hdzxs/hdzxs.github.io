@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="/images/study2.png"/>
+    
+
+
+
+<meta name="twitter:title" content="Java-正则表达式"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="Java-正则表达式 &middot; Cooper&#39;s Blog" />
+  	<meta property="og:site_name" content="Cooper&#39;s Blog" />
+  	<meta property="og:url" content="https://hdzxs.github.io/2019/11/13/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" />
+
+    
+       <meta property="og:image" content="/images/study2.png"/>
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2019-11-13T17:54:07&#43;08:00" />
+
+    
+    <meta property="article:tag" content="study" />
+    
+    
+
+    <title>Java-正则表达式 &middot; Cooper&#39;s Blog</title>
+
+    
+    <meta name="description" content="&lt;p&gt;&amp;emsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;emsp; 正则表达式，在代码中常简写为regex或RE。一个强大的字符串处理工具，可以对字符串进行查找、提取、分割、替换等操作，是一种可以用于模式匹配和替换的规范。&lt;/p&gt;" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://hdzxs.github.io/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://hdzxs.github.io/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://hdzxs.github.io/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://hdzxs.github.io/css/nav.css" />
+    
+
+    
+
+    
+      
+          <link href="https://hdzxs.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Cooper&#39;s Blog" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.58.3" />
+
+    <link rel="canonical" href="https://hdzxs.github.io/2019/11/13/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name":  null ,
+        "logo": "https://hdzxs.github.io/images/logo4.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name":  null ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://hdzxs.github.io/images/logo4.png",
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": "https://hdzxs.github.io/",
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ],
+        "description": "Student in Computer Sicence，OUC"
+        
+    },
+    "headline": "Java-正则表达式",
+    "name": "Java-正则表达式",
+    "wordCount":  2191 ,
+    "timeRequired": "PT5M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": "en"
+    },
+    "url": "https://hdzxs.github.io/2019/11/13/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/",
+    "datePublished": "2019-11-13T17:54Z",
+    "dateModified": "2019-11-13T17:54Z",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://hdzxs.github.io//images/study2.png",
+        "width": 3000,
+        "height": 1445
+    },
+    
+    "keywords": "study",
+    "description": "",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://hdzxs.github.io/2019/11/13/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+
+    
+</head>
+<body class="nav-closed">
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            <h3>Blog</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://hdzxs.github.io/">Blog</a>
+            </li>
+        
+            <h3>Categories</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://hdzxs.github.io/categories/study">Study</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://hdzxs.github.io/categories/essay">Essay</a>
+            </li>
+        
+            <h3>Archive</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://hdzxs.github.io/archive">Archive</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="https://hdzxs.github.io/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+ <div class="site-wrapper">
+	
+
+
+
+  
+  <header class="main-header post-head" style="background-image: url(/images/study2.png)">
+  
+  <nav class="main-nav overlay clearfix">
+
+
+  
+      <a class="blog-logo" href="https://hdzxs.github.io/"><img src="https://hdzxs.github.io/images/logo4.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Java-正则表达式</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2019-11-13T17:54:07&#43;08:00">
+            Nov 13, 2019
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://hdzxs.github.io//tags/study/">#study</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>&emsp;</p>
+
+<p>&emsp; 正则表达式，在代码中常简写为regex或RE。一个强大的字符串处理工具，可以对字符串进行查找、提取、分割、替换等操作，是一种可以用于模式匹配和替换的规范。</p>
+
+<h3 id="string类中提供的几个方法">String类中提供的几个方法</h3>
+
+<ul>
+<li><p>boolean matches(String regex): 判断字符串是否匹配指定的正则表达式。</p></li>
+
+<li><p>String replaceAll(String regex, String replacement): 将字符串中所有匹配regex的子串替换成replacement。</p></li>
+
+<li><p>String replaceFirst(String regex, String replacement):将字符串中第一个匹配regex的子串替换成replacement。</p></li>
+
+<li><p>String[] split(String regex): 以regex为分隔符，将该字符串分割成多个子串。</p></li>
+</ul>
+
+<h3 id="正则表达式支持字符">正则表达式支持字符</h3>
+
+<p>创建一个正则表达式就是创建一个特殊的字符串，这个表达式所支持的合法字符如表1所示：</p>
+
+<p><center>合法字符</center></p>
+
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>解释</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>X</td>
+<td>字符x（表示任何合法的字符）</td>
+</tr>
+
+<tr>
+<td>/0mnn</td>
+<td>八进制数0mnn所表示的字符</td>
+</tr>
+
+<tr>
+<td>\xhh</td>
+<td>十六进制值 0xhh 所表示的字符</td>
+</tr>
+
+<tr>
+<td>\uhhhh</td>
+<td>十六进制值 0xhhhh 所表示的 Unicode 字符</td>
+</tr>
+
+<tr>
+<td>\t</td>
+<td>制表符（“\u0009”）</td>
+</tr>
+
+<tr>
+<td>\n</td>
+<td>新行（换行）符（‘\u000A’）</td>
+</tr>
+
+<tr>
+<td>\r</td>
+<td>回车符（‘\u000D’)</td>
+</tr>
+
+<tr>
+<td>\f</td>
+<td>换页符（‘\u000C’）</td>
+</tr>
+
+<tr>
+<td>\a</td>
+<td>报警（bell）符（‘\u0007’）</td>
+</tr>
+
+<tr>
+<td>\e</td>
+<td>Escape 符（‘\u001B’）</td>
+</tr>
+
+<tr>
+<td>\cx</td>
+<td>x 对应的的控制符。例如，\cM匹配 Ctrl-M。x 值必须为 A~Z 或 a~z 之一。</td>
+</tr>
+</tbody>
+</table>
+
+<p>​</p>
+
+<p>上面的是合法字符，正则表达式中有一些特殊字符，这些特殊字符在正则表达式中有其特殊的用途，想要匹配这些字符，必须先将这些字符转义，也就是在前面加一个反斜<code>\</code>。</p>
+
+<p><center>      特殊字符    </center></p>
+
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>解释</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>$</td>
+<td>匹配一行的结尾。要匹配 $ 字符本身，请使用<code>\$</code></td>
+</tr>
+
+<tr>
+<td>^</td>
+<td>匹配一行的开头。要匹配 ^ 字符本身，请使用<code>\^</code></td>
+</tr>
+
+<tr>
+<td>()</td>
+<td>标记子表达式的开始和结束位置。要匹配这些字符，请使用<code>\(</code>和<code>\)</code></td>
+</tr>
+
+<tr>
+<td>[]</td>
+<td>用于确定中括号表达式的开始和结束位置。要匹配这些字符，请使用<code>\[</code>和<code>\]</code></td>
+</tr>
+
+<tr>
+<td>{}</td>
+<td>用于标记前面子表达式的出现频度。要匹配这些字符，请使用<code>\{</code>和<code>\}</code></td>
+</tr>
+
+<tr>
+<td>*</td>
+<td>指定前面子表达式可以出现零次或多次。要匹配 * 字符本身，请使用<code>\*</code></td>
+</tr>
+
+<tr>
+<td>+</td>
+<td>指定前面子表达式可以出现一次或多次。要匹配 + 字符本身，请使用<code>\+</code></td>
+</tr>
+
+<tr>
+<td>?</td>
+<td>指定前面子表达式可以出现零次或一次。要匹配 ？字符本身，请使用<code>\?</code></td>
+</tr>
+
+<tr>
+<td>.</td>
+<td>匹配除换行符<code>\n</code>之外的任何单字符。要匹配<code>.</code>字符本身，请使用<code>\.</code></td>
+</tr>
+
+<tr>
+<td></td>
+<td>用于转义下一个字符，或指定八进制、十六进制字符。如果需匹配<code>\</code>字符，请用<code>\\</code></td>
+</tr>
+
+<tr>
+<td>|</td>
+<td>指定两项之间任选一项。如果要匹配<code>丨</code>字符本身，请使用<code>\|</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>预定义字符可以解决诸如匹配全部子母、全部数字的情况。</p>
+
+<p>下面的 7 个预定义字符其实很容易记忆，其中：</p>
+
+<ul>
+<li>d 是 digit 的意思，代表数字。</li>
+<li>s 是 space 的意思，代表空白。</li>
+<li>w 是 word 的意思，代表单词。</li>
+<li>d、s、w 的大写形式恰好匹配与之相反的字符。</li>
+</ul>
+
+<p><center>预定义字符  </center></p>
+
+<table>
+<thead>
+<tr>
+<th>预定义字符</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>.</td>
+<td>可以匹配任何字符</td>
+</tr>
+
+<tr>
+<td>\d</td>
+<td>匹配 0~9 的所有数字</td>
+</tr>
+
+<tr>
+<td>\D</td>
+<td>匹配非数字</td>
+</tr>
+
+<tr>
+<td>\s</td>
+<td>匹配所有的空白字符，包括空格、制表符、回车符、换页符、换行符等</td>
+</tr>
+
+<tr>
+<td>\S</td>
+<td>匹配所有的非空白字符</td>
+</tr>
+
+<tr>
+<td>\w</td>
+<td>匹配所有的单词字符，包括 0~9 所有数字、26 个英文字母和下画线<code>_</code></td>
+</tr>
+
+<tr>
+<td>\W</td>
+<td>匹配所有的非单词字符</td>
+</tr>
+</tbody>
+</table>
+
+<p>方括号表达式用于处理匹配特定范围内，如a-f中的某个字母这种情况。</p>
+
+<p><center>
+    方括号表达式</center></p>
+
+<table>
+<thead>
+<tr>
+<th>方括号表达式</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>表示枚举</td>
+<td align="left">例如<code>[abc]</code>表示 a、b、c 其中任意一个字符；<code>[gz]</code>表示 g、z 其中任意一个字符</td>
+</tr>
+
+<tr>
+<td>表示范围：-</td>
+<td align="left">例如<code>[a-f]</code>表示 a~f 范围内的任意字符；<code>[\\u0041-\\u0056]</code>表示十六进制字符 \u0041 到 \u0056 范围的字符。范围可以和枚举结合使用，如<code>[a-cx-z]</code>，表示 a~c、x~z 范围内的任意字符</td>
+</tr>
+
+<tr>
+<td>表示求否：^</td>
+<td align="left">例如<code>[^abc]</code>表示非 a、b、c 的任意字符；<code>[^a-f]</code>表示不是 a~f 范围内的任意字符</td>
+</tr>
+
+<tr>
+<td>表示“与”运算：&amp;&amp;</td>
+<td align="left">例如 <code>[a-z&amp;&amp;[def]]</code>是 a~z 和 [def] 的交集，表示 d、e <code>f[a-z&amp;&amp;^bc]]</code>是 a~z 范围内的所有字符，除 b 和 c 之外 <code>[ad-z] [a-z&amp;&amp;[m-p]]</code>是 a~z 范围内的所有字符，除 m~p 范围之外的字符</td>
+</tr>
+
+<tr>
+<td>表示“并”运算</td>
+<td align="left">并运算与前面的枚举类似。例如<code>[a-d[m-p]]</code>表示 [a-dm-p]</td>
+</tr>
+</tbody>
+</table>
+
+<p><code>方括号表达式比前面的预定义字符灵活多了，几乎可以匹配任何字符。例如，若需要匹配所有的中文字符，就可以利用 [\\u0041-\\u0056] 形式——因为所有中文字符的 Unicode 值是连续的，只要找出所有中文字符中最小、最大的 Unicode 值，就可以利用上面形式来匹配所有的中文字符。</code></p>
+
+<p>除此之外，Java 正则表达式还支持如表 5 所示的几个边界匹配符。</p>
+
+<table>
+<thead>
+<tr>
+<th>边界匹配符</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>^</td>
+<td>行的开头</td>
+</tr>
+
+<tr>
+<td>$</td>
+<td>行的结尾</td>
+</tr>
+
+<tr>
+<td>\b</td>
+<td>单词的边界</td>
+</tr>
+
+<tr>
+<td>\B</td>
+<td>非单词的边界</td>
+</tr>
+
+<tr>
+<td>\A</td>
+<td>输入的开头</td>
+</tr>
+
+<tr>
+<td>\G</td>
+<td>前一个匹配的结尾</td>
+</tr>
+
+<tr>
+<td>\Z</td>
+<td>输入的结尾，仅用于最后的结束符</td>
+</tr>
+
+<tr>
+<td>\z</td>
+<td>输入的结尾</td>
+</tr>
+</tbody>
+</table>
+
+<p>前面例子中需要建立一个匹配 000-000-0000 形式的电话号码时，使用了 \d\d\d-\d\d\d-\d\d\d\d 正则表达式，这看起来比较烦琐。实际上，正则表达式还提供了数量标识符，正则表达式支持的数量标识符有如下几种模式。</p>
+
+<ul>
+<li>Greedy（贪婪模式）：数量表示符默认采用贪婪模式，除非另有表示。贪婪模式的表达式会一直匹配下去，直到无法匹配为止。如果你发现表达式匹配的结果与预期的不符，很有可能是因为你以为表达式只会匹配前面几个字符，而实际上它是贪婪模式，所以会一直匹配下去。</li>
+<li>Reluctant（勉强模式）：用问号后缀（?）表示，它只会匹配最少的字符。也称为最小匹配模式。</li>
+<li>Possessive（占有模式）：用加号后缀（+）表示，目前只有 Java 支持占有模式，通常比较少用。</li>
+</ul>
+
+<p>三种模式的数量表示符如表 6 所示。</p>
+
+<p>String str = &ldquo;hello,java!&rdquo;;
+// 贪婪模式的正则表达式
+System.out.println(str.replaceFirst(&rdquo;\w<em>&rdquo; , &ldquo;■&rdquo;));  //输出■,java!
+// 勉强模式的正则表达式
+System.out.println(str.replaceFirst(&rdquo;\w</em>?&rdquo; , &ldquo;■&rdquo;&ldquo;));  //输出■hello, java!</p>
+
+<p>当从“hello java!”字符串中查找匹配<code>\\w*</code><code>\w*</code><code>*</code><code>*</code></p>
+
+<p>本文转载自 <a href="http://c.biancheng.net/view/5812.html">http://c.biancheng.net/view/5812.html</a> 。</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="https://hdzxs.github.io/" style="background-image: url(/images/logo4.png)"><span class="hidden">Cooper's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://hdzxs.github.io/">Cooper</a></h4>
+  
+  <p>Student in Computer Sicence，OUC</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Shenyang Liaoning</span>
+    <span class="author-link icon-link"><a href="https://hdzxs.github.io/">https://hdzxs.github.io/</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Java-%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f&nbsp;-&nbsp;Cooper%27s%20Blog&amp;url=https%3a%2f%2fhdzxs.github.io%2f2019%2f11%2f13%2f%25E6%25AD%25A3%25E5%2588%2599%25E8%25A1%25A8%25E8%25BE%25BE%25E5%25BC%258F%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhdzxs.github.io%2f2019%2f11%2f13%2f%25E6%25AD%25A3%25E5%2588%2599%25E8%25A1%25A8%25E8%25BE%25BE%25E5%25BC%258F%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhdzxs.github.io%2f2019%2f11%2f13%2f%25E6%25AD%25A3%25E5%2588%2599%25E8%25A1%25A8%25E8%25BE%25BE%25E5%25BC%258F%2f&amp;description=Java-%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhdzxs.github.io%2f2019%2f11%2f13%2f%25E6%25AD%25A3%25E5%2588%2599%25E8%25A1%25A8%25E8%25BE%25BE%25E5%25BC%258F%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="background-image: url(/images/study1.png)" href="https://hdzxs.github.io/2019/11/12/%E8%87%AA%E5%AD%A6java%E4%B9%8B%E8%B7%AF/">
+          <section class="post">
+              <h2>自学java之路＋随笔</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Cooper&#39;s Blog</a> All rights reserved - 2019</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, ith <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+	
+    <script type="text/javascript" src="https://hdzxs.github.io/js/jquery.js"></script>
+    <script type="text/javascript" src="https://hdzxs.github.io/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://hdzxs.github.io/js/index.js"></script>
+	
+	
+    
+	
+</body>
+</html>
+
