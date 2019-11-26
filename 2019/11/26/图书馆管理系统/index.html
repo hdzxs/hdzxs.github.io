@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="/images/study1.png"/>
+    
+
+
+
+<meta name="twitter:title" content="图书馆管理系统"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="图书馆管理系统 &middot; Cooper&#39;s Blog" />
+  	<meta property="og:site_name" content="Cooper&#39;s Blog" />
+  	<meta property="og:url" content="https://hdzxs.github.io/2019/11/26/%E5%9B%BE%E4%B9%A6%E9%A6%86%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" />
+
+    
+       <meta property="og:image" content="/images/study1.png"/>
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2019-11-26T17:06:04&#43;08:00" />
+
+    
+    <meta property="article:tag" content="study" />
+    
+    
+
+    <title>图书馆管理系统 &middot; Cooper&#39;s Blog</title>
+
+    
+    <meta name="description" content="&lt;p&gt;本学期的软件系统设计与分析课上，我们利用九周的时间设计开发了一款图书馆管理系统。虽不是个多大的项目，但也真的值得记录。&lt;/p&gt;" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://hdzxs.github.io/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://hdzxs.github.io/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://hdzxs.github.io/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://hdzxs.github.io/css/nav.css" />
+    
+
+    
+
+    
+      
+          <link href="https://hdzxs.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Cooper&#39;s Blog" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.58.3" />
+
+    <link rel="canonical" href="https://hdzxs.github.io/2019/11/26/%E5%9B%BE%E4%B9%A6%E9%A6%86%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name":  null ,
+        "logo": "https://hdzxs.github.io/images/logo4.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name":  null ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://hdzxs.github.io/images/logo4.png",
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": "https://hdzxs.github.io/",
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ],
+        "description": "Student in Computer Sicence，OUC"
+        
+    },
+    "headline": "图书馆管理系统",
+    "name": "图书馆管理系统",
+    "wordCount":  1296 ,
+    "timeRequired": "PT3M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": "en"
+    },
+    "url": "https://hdzxs.github.io/2019/11/26/%E5%9B%BE%E4%B9%A6%E9%A6%86%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/",
+    "datePublished": "2019-11-26T17:06Z",
+    "dateModified": "2019-11-26T17:06Z",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://hdzxs.github.io//images/study1.png",
+        "width": 3000,
+        "height": 1445
+    },
+    
+    "keywords": "study",
+    "description": "",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://hdzxs.github.io/2019/11/26/%E5%9B%BE%E4%B9%A6%E9%A6%86%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+
+    
+</head>
+<body class="nav-closed">
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            <h3>Blog</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://hdzxs.github.io/">Blog</a>
+            </li>
+        
+            <h3>Categories</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://hdzxs.github.io/categories/study">Study</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://hdzxs.github.io/categories/essay">Essay</a>
+            </li>
+        
+            <h3>Archive</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://hdzxs.github.io/archive">Archive</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="https://hdzxs.github.io/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+ <div class="site-wrapper">
+	
+
+
+
+  
+  <header class="main-header post-head" style="background-image: url(/images/study1.png)">
+  
+  <nav class="main-nav overlay clearfix">
+
+
+  
+      <a class="blog-logo" href="https://hdzxs.github.io/"><img src="https://hdzxs.github.io/images/logo4.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">图书馆管理系统</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2019-11-26T17:06:04&#43;08:00">
+            Nov 26, 2019
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://hdzxs.github.io//tags/study/">#study</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>本学期的软件系统设计与分析课上，我们利用九周的时间设计开发了一款图书馆管理系统。虽不是个多大的项目，但也真的值得记录。</p>
+
+<h3 id="功能介绍">功能介绍</h3>
+
+<p>我们的图书馆管理系统是没有用户登录的，所有操作都通过管理员进行。这一点我一直很纠结，因为我确实认为现在的图书馆管理系统用户和管理员是两个系统，我们的系统就应该只面向管理员，但是增加用户功能更加合理才是。如果重新设计，我还是会考虑增加用户登录。</p>
+
+<p>下面是我们设计的功能图：</p>
+
+<p><img src="https://hdzxs.github.io/images/功能.png" alt="img" /></p>
+
+<h3 id="数据分析">数据分析</h3>
+
+<p>数据属性和数据实体之间的关系见下面的E-R图：</p>
+
+<p><img src="https://hdzxs.github.io/images/E-R.png" alt="img" /></p>
+
+<p>主要讨论下数据的存储结构。我们这里一方面是为了方便，另一方面也是我们代码人员的强烈要求下，我们采用了顺序存储的方式。这样做的好处是许多操作变得简单，比如检索数据。因为使用的语言是C++，速度也还可以接受。但是，这样做也带来了一些问题，包括说批量操作的困难；后台数据的不规整。总之，现在来看，我绝不认为，顺序存储是个好办法。（如果是的话，还要数据结构干嘛。只能怪我数据结构没学好）</p>
+
+<h3 id="我的工作">我的工作</h3>
+
+<p>一如既往地，我是组长。对，我自己都不知道这是第多少个组长了。</p>
+
+<p>说实话，我是爱当组长的，可能喜欢发号施令的感觉？总之，先简单说下我觉得自己做的好的地方吧：</p>
+
+<ol>
+<li>分工：也算是分了个好工吧。我自己确实不厌烦写报告，也不害怕组织讨论和讲话，所以我当了组长。编码的同学实力确实也到位，基本不用我去怎么催，他们就抽时间完成了很多内容。我认为能力较差的其他同学也都把自己的工作做得很好。所以，分工这一块，我觉得自己做的还可以。</li>
+</ol>
+
+<p>然后是做的不好不坏的：</p>
+
+<ol>
+<li>报告：这次的报告我也确实是用心了，不能说做的差。但是经验的不足，和时间上的不合理安排，让我觉得还是做的不够好。最重要的是，词穷的问题很明显，许多地方都不会表达。考虑到我自己有想做策划类工作的想法，还是要在这里再下一些功夫。悄悄贴个目录，纪念下吧。<img src="https://hdzxs.github.io/images/目录.png" alt="img" /></li>
+</ol>
+
+<p>最后是我比较不满意的地方：</p>
+
+<ol>
+<li>文档：项目中间的文档，我的重视程度十分不够，可以说几乎没有正式的文档。这样导致了我的周报告不太好做，最后的技术报告更不好做。自己总是喜欢用脑子记录，但是脑子它不靠谱啊！所以以后还是要逼自己养成多写正式文档的习惯。</li>
+<li>编码：我虽然不排斥做组长，也想练练写报告，但是想到这次一点编码工作没做，我还是有点后悔的。挺好的锻炼机会就错过去了。（话说，软工也是哈，毕竟大佬太多了）总之，不爱编码的毛病要改改了。</li>
+<li>时间规划：这次的开发时间不算长，而且我也对gx比较有信心，就没有做太好的时间规划。但现在来看，这一点是个硬伤，对一个复杂集体项目来说，时间规划和组长的严格要求，应该是非常重要的才对。以后要尽量做好时间规划，更要形成文档。</li>
+</ol>
+
+<h3 id="总结">总结</h3>
+
+<p>写到最后，突然觉得，这次的项目，自己在被大佬带着走。如果不是他们自己的时间安排做得好，编码上心，整件事可能就不会这么容易了。许多地方感觉自己还是太懒了，总想着往简单了来，尽量简化工作。但是有些东西真的不应该简化，至少不应在学习阶段简化。还有就是，那些我觉得自己擅长的事：当组长、写报告之类的，大佬们真的做的好太多了，这些只是他们的附加技能之一，而我还当做什么优点，哎。</p>
+
+<p>不丧不丧，差距我一直都清楚。总之，要学习的地方真的还有很多，小硕继续加油吧！</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="https://hdzxs.github.io/" style="background-image: url(/images/logo4.png)"><span class="hidden">Cooper's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://hdzxs.github.io/">Cooper</a></h4>
+  
+  <p>Student in Computer Sicence，OUC</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Shenyang Liaoning</span>
+    <span class="author-link icon-link"><a href="https://hdzxs.github.io/">https://hdzxs.github.io/</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e5%9b%be%e4%b9%a6%e9%a6%86%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f&nbsp;-&nbsp;Cooper%27s%20Blog&amp;url=https%3a%2f%2fhdzxs.github.io%2f2019%2f11%2f26%2f%25E5%259B%25BE%25E4%25B9%25A6%25E9%25A6%2586%25E7%25AE%25A1%25E7%2590%2586%25E7%25B3%25BB%25E7%25BB%259F%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhdzxs.github.io%2f2019%2f11%2f26%2f%25E5%259B%25BE%25E4%25B9%25A6%25E9%25A6%2586%25E7%25AE%25A1%25E7%2590%2586%25E7%25B3%25BB%25E7%25BB%259F%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhdzxs.github.io%2f2019%2f11%2f26%2f%25E5%259B%25BE%25E4%25B9%25A6%25E9%25A6%2586%25E7%25AE%25A1%25E7%2590%2586%25E7%25B3%25BB%25E7%25BB%259F%2f&amp;description=%e5%9b%be%e4%b9%a6%e9%a6%86%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhdzxs.github.io%2f2019%2f11%2f26%2f%25E5%259B%25BE%25E4%25B9%25A6%25E9%25A6%2586%25E7%25AE%25A1%25E7%2590%2586%25E7%25B3%25BB%25E7%25BB%259F%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="background-image: url(/images/study2.png)" href="https://hdzxs.github.io/2019/11/13/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+          <section class="post">
+              <h2>Java-正则表达式</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Cooper&#39;s Blog</a> All rights reserved - 2019</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, ith <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+	
+    <script type="text/javascript" src="https://hdzxs.github.io/js/jquery.js"></script>
+    <script type="text/javascript" src="https://hdzxs.github.io/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://hdzxs.github.io/js/index.js"></script>
+	
+	
+    
+	
+</body>
+</html>
+
