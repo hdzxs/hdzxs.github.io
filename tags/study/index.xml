@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <copyright>All rights reserved - 2019</copyright>
-    <lastBuildDate>Mon, 30 Dec 2019 13:59:45 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Feb 2020 12:30:06 +0800</lastBuildDate>
     
 	<atom:link href="https://hdzxs.github.io/tags/study/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>PATA1082</title>
+      <link>https://hdzxs.github.io/2020/02/08/pata1082/</link>
+      <pubDate>Sat, 08 Feb 2020 12:30:06 +0800</pubDate>
+      
+      <guid>https://hdzxs.github.io/2020/02/08/pata1082/</guid>
+      <description>&lt;p&gt;Given an integer with no more than 9 digits, you are supposed to read it in the traditional Chinese way. Output &lt;code&gt;Fu&lt;/code&gt; first if it is negative. For example, -123456789 is read as &lt;code&gt;Fu yi Yi er Qian san Bai si Shi wu Wan liu Qian qi Bai ba Shi jiu&lt;/code&gt;. Note: zero (&lt;code&gt;ling&lt;/code&gt;) must be handled correctly according to the Chinese tradition. For example, 100800 is &lt;code&gt;yi Shi Wan ling ba Bai&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>软件工程复习</title>
@@ -18,7 +27,7 @@
       <pubDate>Mon, 30 Dec 2019 13:59:45 +0800</pubDate>
       
       <guid>https://hdzxs.github.io/2019/12/30/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%A4%8D%E4%B9%A0/</guid>
-      <description>软件工程上课画的重点，仅供参考。 软件危机与软件工程的关系 P1 软件工程的基本原理 P7 用分阶段的生命周期计划严格管理 坚持进行阶段评审 实行严格的产品控</description>
+      <description>&lt;p&gt;软件工程上课画的重点，仅供参考。&lt;/p&gt;</description>
     </item>
     
     <item>
