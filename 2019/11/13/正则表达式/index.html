@@ -14,13 +14,13 @@
 
 
 
-<meta name="twitter:title" content="Java-正则表达式"/>
+<meta name="twitter:title" content="正则表达式"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="Java-正则表达式 &middot; Cooper&#39;s Blog" />
+  	<meta property="og:title" content="正则表达式 &middot; Cooper&#39;s Blog" />
   	<meta property="og:site_name" content="Cooper&#39;s Blog" />
   	<meta property="og:url" content="https://hdzxs.github.io/2019/11/13/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" />
 
@@ -38,12 +38,12 @@
     
     
 
-    <title>Java-正则表达式 &middot; Cooper&#39;s Blog</title>
+    <title>正则表达式 &middot; Cooper&#39;s Blog</title>
 
     
     <meta name="description" content="&lt;p&gt;&amp;emsp;&lt;/p&gt;
 
-&lt;p&gt;&amp;emsp; 正则表达式，在代码中常简写为regex或RE。一个强大的字符串处理工具，可以对字符串进行查找、提取、分割、替换等操作，是一种可以用于模式匹配和替换的规范。&lt;/p&gt;" />
+&lt;p&gt;&amp;emsp; 正则表达式，在代码中常简写为regex或RE。一个强大的字符串处理工具，可以对字符串进行查找、提取、分割、替换等操作，是一种可以用于模式匹配和替换的规范。&lt;/p&gt;" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -105,9 +105,9 @@
         "description": "Student in Computer Sicence，OUC"
         
     },
-    "headline": "Java-正则表达式",
-    "name": "Java-正则表达式",
-    "wordCount":  2191 ,
+    "headline": "正则表达式",
+    "name": "正则表达式",
+    "wordCount":  2303 ,
     "timeRequired": "PT5M",
     "inLanguage": {
       "@type": "Language",
@@ -210,7 +210,7 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">Java-正则表达式</h1>
+        <h1 class="post-title">正则表达式</h1>
         <small></small>
 
         <section class="post-meta">
@@ -228,7 +228,7 @@
     <section class="post-content">
       <p>&emsp;</p>
 
-<p>&emsp; 正则表达式，在代码中常简写为regex或RE。一个强大的字符串处理工具，可以对字符串进行查找、提取、分割、替换等操作，是一种可以用于模式匹配和替换的规范。</p>
+<p>&emsp; 正则表达式，在代码中常简写为regex或RE。一个强大的字符串处理工具，可以对字符串进行查找、提取、分割、替换等操作，是一种可以用于模式匹配和替换的规范。</p>
 
 <h3 id="string类中提供的几个方法">String类中提供的几个方法</h3>
 
@@ -246,145 +246,39 @@
 
 <p>创建一个正则表达式就是创建一个特殊的字符串，这个表达式所支持的合法字符如表1所示：</p>
 
-<p><center>合法字符</center></p>
-
-<table>
-<thead>
-<tr>
-<th>字符</th>
-<th>解释</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>X</td>
-<td>字符x（表示任何合法的字符）</td>
-</tr>
-
-<tr>
-<td>/0mnn</td>
-<td>八进制数0mnn所表示的字符</td>
-</tr>
-
-<tr>
-<td>\xhh</td>
-<td>十六进制值 0xhh 所表示的字符</td>
-</tr>
-
-<tr>
-<td>\uhhhh</td>
-<td>十六进制值 0xhhhh 所表示的 Unicode 字符</td>
-</tr>
-
-<tr>
-<td>\t</td>
-<td>制表符（“\u0009”）</td>
-</tr>
-
-<tr>
-<td>\n</td>
-<td>新行（换行）符（‘\u000A’）</td>
-</tr>
-
-<tr>
-<td>\r</td>
-<td>回车符（‘\u000D’)</td>
-</tr>
-
-<tr>
-<td>\f</td>
-<td>换页符（‘\u000C’）</td>
-</tr>
-
-<tr>
-<td>\a</td>
-<td>报警（bell）符（‘\u0007’）</td>
-</tr>
-
-<tr>
-<td>\e</td>
-<td>Escape 符（‘\u001B’）</td>
-</tr>
-
-<tr>
-<td>\cx</td>
-<td>x 对应的的控制符。例如，\cM匹配 Ctrl-M。x 值必须为 A~Z 或 a~z 之一。</td>
-</tr>
-</tbody>
-</table>
+<p><center>合法字符</center>
+| 字符   | 解释                                                         |
+| &mdash;&mdash; | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; |
+| X      | 字符x（表示任何合法的字符）                                  |
+| /0mnn  | 八进制数0mnn所表示的字符                                     |
+| \xhh   | 十六进制值 0xhh 所表示的字符                                 |
+| \uhhhh | 十六进制值 0xhhhh 所表示的 Unicode 字符                      |
+| \t     | 制表符（“\u0009”）                                           |
+| \n     | 新行（换行）符（‘\u000A’）                                   |
+| \r     | 回车符（‘\u000D’)                                            |
+| \f     | 换页符（‘\u000C’）                                           |
+| \a     | 报警（bell）符（‘\u0007’）                                   |
+| \e     | Escape 符（‘\u001B’）                                        |
+| \cx    | x 对应的的控制符。例如，\cM匹配 Ctrl-M。x 值必须为 A~Z 或 a~z 之一。 |</p>
 
 <p>​</p>
 
 <p>上面的是合法字符，正则表达式中有一些特殊字符，这些特殊字符在正则表达式中有其特殊的用途，想要匹配这些字符，必须先将这些字符转义，也就是在前面加一个反斜<code>\</code>。</p>
 
-<p><center>      特殊字符    </center></p>
-
-<table>
-<thead>
-<tr>
-<th>字符</th>
-<th>解释</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>$</td>
-<td>匹配一行的结尾。要匹配 $ 字符本身，请使用<code>\$</code></td>
-</tr>
-
-<tr>
-<td>^</td>
-<td>匹配一行的开头。要匹配 ^ 字符本身，请使用<code>\^</code></td>
-</tr>
-
-<tr>
-<td>()</td>
-<td>标记子表达式的开始和结束位置。要匹配这些字符，请使用<code>\(</code>和<code>\)</code></td>
-</tr>
-
-<tr>
-<td>[]</td>
-<td>用于确定中括号表达式的开始和结束位置。要匹配这些字符，请使用<code>\[</code>和<code>\]</code></td>
-</tr>
-
-<tr>
-<td>{}</td>
-<td>用于标记前面子表达式的出现频度。要匹配这些字符，请使用<code>\{</code>和<code>\}</code></td>
-</tr>
-
-<tr>
-<td>*</td>
-<td>指定前面子表达式可以出现零次或多次。要匹配 * 字符本身，请使用<code>\*</code></td>
-</tr>
-
-<tr>
-<td>+</td>
-<td>指定前面子表达式可以出现一次或多次。要匹配 + 字符本身，请使用<code>\+</code></td>
-</tr>
-
-<tr>
-<td>?</td>
-<td>指定前面子表达式可以出现零次或一次。要匹配 ？字符本身，请使用<code>\?</code></td>
-</tr>
-
-<tr>
-<td>.</td>
-<td>匹配除换行符<code>\n</code>之外的任何单字符。要匹配<code>.</code>字符本身，请使用<code>\.</code></td>
-</tr>
-
-<tr>
-<td></td>
-<td>用于转义下一个字符，或指定八进制、十六进制字符。如果需匹配<code>\</code>字符，请用<code>\\</code></td>
-</tr>
-
-<tr>
-<td>|</td>
-<td>指定两项之间任选一项。如果要匹配<code>丨</code>字符本身，请使用<code>\|</code></td>
-</tr>
-</tbody>
-</table>
+<p><center>      特殊字符    </center>
+| 字符 | 解释                                                         |
+| &mdash;- | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; |
+| $    | 匹配一行的结尾。要匹配 $ 字符本身，请使用<code>\$</code>                |
+| ^    | 匹配一行的开头。要匹配 ^ 字符本身，请使用<code>\^</code>                |
+| ()   | 标记子表达式的开始和结束位置。要匹配这些字符，请使用<code>\(</code>和<code>\)</code> |
+| []   | 用于确定中括号表达式的开始和结束位置。要匹配这些字符，请使用<code>\[</code>和<code>\]</code> |
+| {}   | 用于标记前面子表达式的出现频度。要匹配这些字符，请使用<code>\{</code>和<code>\}</code> |
+| *    | 指定前面子表达式可以出现零次或多次。要匹配 * 字符本身，请使用<code>\*</code> |
+| +    | 指定前面子表达式可以出现一次或多次。要匹配 + 字符本身，请使用<code>\+</code> |
+| ?    | 指定前面子表达式可以出现零次或一次。要匹配 ？字符本身，请使用<code>\?</code> |
+| .    | 匹配除换行符<code>\n</code>之外的任何单字符。要匹配<code>.</code>字符本身，请使用<code>\.</code> |
+| \    | 用于转义下一个字符，或指定八进制、十六进制字符。如果需匹配<code>\</code>字符，请用<code>\\</code> |
+| |   | 指定两项之间任选一项。如果要匹配<code>丨</code>字符本身，请使用<code>\|</code>     |</p>
 
 <p>预定义字符可以解决诸如匹配全部子母、全部数字的情况。</p>
 
@@ -397,53 +291,16 @@
 <li>d、s、w 的大写形式恰好匹配与之相反的字符。</li>
 </ul>
 
-<p><center>预定义字符  </center></p>
-
-<table>
-<thead>
-<tr>
-<th>预定义字符</th>
-<th>说明</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>.</td>
-<td>可以匹配任何字符</td>
-</tr>
-
-<tr>
-<td>\d</td>
-<td>匹配 0~9 的所有数字</td>
-</tr>
-
-<tr>
-<td>\D</td>
-<td>匹配非数字</td>
-</tr>
-
-<tr>
-<td>\s</td>
-<td>匹配所有的空白字符，包括空格、制表符、回车符、换页符、换行符等</td>
-</tr>
-
-<tr>
-<td>\S</td>
-<td>匹配所有的非空白字符</td>
-</tr>
-
-<tr>
-<td>\w</td>
-<td>匹配所有的单词字符，包括 0~9 所有数字、26 个英文字母和下画线<code>_</code></td>
-</tr>
-
-<tr>
-<td>\W</td>
-<td>匹配所有的非单词字符</td>
-</tr>
-</tbody>
-</table>
+<p><center>预定义字符  </center>
+| 预定义字符 | 说明                                                         |
+| &mdash;&mdash;&mdash;- | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; |
+| .          | 可以匹配任何字符                                             |
+| \d         | 匹配 0~9 的所有数字                                          |
+| \D         | 匹配非数字                                                   |
+| \s         | 匹配所有的空白字符，包括空格、制表符、回车符、换页符、换行符等 |
+| \S         | 匹配所有的非空白字符                                         |
+| \w         | 匹配所有的单词字符，包括 0~9 所有数字、26 个英文字母和下画线<code>_</code> |
+| \W         | 匹配所有的非单词字符                                         |</p>
 
 <p>方括号表达式用于处理匹配特定范围内，如a-f中的某个字母这种情况。</p>
 
@@ -597,7 +454,7 @@ System.out.println(str.replaceFirst(&rdquo;\w</em>?&rdquo; , &ldquo;■&rdquo;&l
     
 <section class="share">
   <h4>Share this post</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Java-%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f&nbsp;-&nbsp;Cooper%27s%20Blog&amp;url=https%3a%2f%2fhdzxs.github.io%2f2019%2f11%2f13%2f%25E6%25AD%25A3%25E5%2588%2599%25E8%25A1%25A8%25E8%25BE%25BE%25E5%25BC%258F%2f"
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f&nbsp;-&nbsp;Cooper%27s%20Blog&amp;url=https%3a%2f%2fhdzxs.github.io%2f2019%2f11%2f13%2f%25E6%25AD%25A3%25E5%2588%2599%25E8%25A1%25A8%25E8%25BE%25BE%25E5%25BC%258F%2f"
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
       <span class="hidden">Twitter</span>
   </a>
@@ -605,7 +462,7 @@ System.out.println(str.replaceFirst(&rdquo;\w</em>?&rdquo; , &ldquo;■&rdquo;&l
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhdzxs.github.io%2f2019%2f11%2f13%2f%25E6%25AD%25A3%25E5%2588%2599%25E8%25A1%25A8%25E8%25BE%25BE%25E5%25BC%258F%2f&amp;description=Java-%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f"
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhdzxs.github.io%2f2019%2f11%2f13%2f%25E6%25AD%25A3%25E5%2588%2599%25E8%25A1%25A8%25E8%25BE%25BE%25E5%25BC%258F%2f&amp;description=%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f"
       onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
       <span class="hidden">Pinterest</span>
   </a>
@@ -643,7 +500,7 @@ System.out.println(str.replaceFirst(&rdquo;\w</em>?&rdquo; , &ldquo;■&rdquo;&l
   
       <a class="read-next-story prev" style="background-image: url(/images/study1.png)" href="https://hdzxs.github.io/2019/11/04/%E5%B9%B6%E6%9F%A5%E9%9B%86/">
           <section class="post">
-              <h2>蓝桥杯练习——并查集</h2>
+              <h2>并查集</h2>
           </section>
       </a>
   
