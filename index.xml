@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <copyright>All rights reserved - 2019</copyright>
-    <lastBuildDate>Mon, 10 Feb 2020 19:02:44 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 13:48:06 +0800</lastBuildDate>
     
 	<atom:link href="https://hdzxs.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -22,7 +22,18 @@
     </item>
     
     <item>
-      <title>PATA——B——1015</title>
+      <title>PATA_A_1012</title>
+      <link>https://hdzxs.github.io/2020/02/11/pataa1012/</link>
+      <pubDate>Tue, 11 Feb 2020 13:48:06 +0800</pubDate>
+      
+      <guid>https://hdzxs.github.io/2020/02/11/pataa1012/</guid>
+      <description>&lt;p&gt;PAT_A_1012&lt;/p&gt;
+
+&lt;p&gt;中国加油！武汉加油！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PATA_B_1015</title>
       <link>https://hdzxs.github.io/2020/02/10/patab1062/</link>
       <pubDate>Mon, 10 Feb 2020 19:02:44 +0800</pubDate>
       
@@ -33,12 +44,14 @@
     </item>
     
     <item>
-      <title>PAT-A1082</title>
+      <title>PAT_A_1082</title>
       <link>https://hdzxs.github.io/2020/02/08/pata1082/</link>
       <pubDate>Sat, 08 Feb 2020 12:30:06 +0800</pubDate>
       
       <guid>https://hdzxs.github.io/2020/02/08/pata1082/</guid>
-      <description>&lt;p&gt;中国加油！武汉加油！&lt;/p&gt;</description>
+      <description>&lt;p&gt;PAT_A_1082&lt;/p&gt;
+
+&lt;p&gt;中国加油！武汉加油！&lt;/p&gt;</description>
     </item>
     
     <item>
