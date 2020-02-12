@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <copyright>All rights reserved - 2019</copyright>
-    <lastBuildDate>Tue, 11 Feb 2020 13:48:06 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 12 Feb 2020 18:32:55 +0800</lastBuildDate>
     
 	<atom:link href="https://hdzxs.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>PATA_A_1055</title>
+      <link>https://hdzxs.github.io/2020/02/12/pataa1055/</link>
+      <pubDate>Wed, 12 Feb 2020 18:32:55 +0800</pubDate>
+      
+      <guid>https://hdzxs.github.io/2020/02/12/pataa1055/</guid>
+      <description>&lt;p&gt;PAT_A_1055&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>PATA_A_1012</title>
