@@ -14,15 +14,15 @@
 
 
 
-<meta name="twitter:title" content="PAT_B_1033"/>
+<meta name="twitter:title" content="PATA_A_1039"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="PAT_B_1033 &middot; Cooper&#39;s Blog" />
+  	<meta property="og:title" content="PATA_A_1039 &middot; Cooper&#39;s Blog" />
   	<meta property="og:site_name" content="Cooper&#39;s Blog" />
-  	<meta property="og:url" content="https://hdzxs.github.io/2020/02/14/pata_b_1033/" />
+  	<meta property="og:url" content="https://hdzxs.github.io/2020/02/24/pata_a_1039/" />
 
     
        <meta property="og:image" content="/images/study1.jpg"/>
@@ -31,17 +31,17 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2020-02-14T14:44:11&#43;08:00" />
+    <meta property="article:published_time" content="2020-02-24T20:16:28&#43;08:00" />
 
     
     <meta property="article:tag" content="study" />
     
     
 
-    <title>PAT_B_1033 &middot; Cooper&#39;s Blog</title>
+    <title>PATA_A_1039 &middot; Cooper&#39;s Blog</title>
 
     
-    <meta name="description" content="&lt;p&gt;PAT_B_1033&lt;/p&gt;" />
+    <meta name="description" content="&lt;p&gt;PAT_A_1039&lt;/p&gt;" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -64,7 +64,7 @@
     
     <meta name="generator" content="Hugo 0.58.3" />
 
-    <link rel="canonical" href="https://hdzxs.github.io/2020/02/14/pata_b_1033/" />
+    <link rel="canonical" href="https://hdzxs.github.io/2020/02/24/pata_a_1039/" />
 
     
       
@@ -103,17 +103,17 @@
         "description": "Student in Computer Sicence，OUC"
         
     },
-    "headline": "PAT_B_1033",
-    "name": "PAT_B_1033",
-    "wordCount":  612 ,
-    "timeRequired": "PT2M",
+    "headline": "PATA_A_1039",
+    "name": "PATA_A_1039",
+    "wordCount":  1022 ,
+    "timeRequired": "PT3M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://hdzxs.github.io/2020/02/14/pata_b_1033/",
-    "datePublished": "2020-02-14T14:44Z",
-    "dateModified": "2020-02-14T14:44Z",
+    "url": "https://hdzxs.github.io/2020/02/24/pata_a_1039/",
+    "datePublished": "2020-02-24T20:16Z",
+    "dateModified": "2020-02-24T20:16Z",
     
     "image": {
         "@type": "ImageObject",
@@ -126,7 +126,7 @@
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://hdzxs.github.io/2020/02/14/pata_b_1033/"
+        "@id": "https://hdzxs.github.io/2020/02/24/pata_a_1039/"
     }
 }
     </script>
@@ -208,13 +208,13 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">PAT_B_1033</h1>
+        <h1 class="post-title">PATA_A_1039</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2020-02-14T14:44:11&#43;08:00">
-            Feb 14, 2020
+          <time class="post-date" datetime="2020-02-24T20:16:28&#43;08:00">
+            Feb 24, 2020
           </time>
         
          
@@ -224,78 +224,139 @@
     </header>
 
     <section class="post-content">
-      <p>PAT_B_1033</p>
+      <p>PAT_A_1039</p>
 
-<p>1033 旧键盘打字 (20分)</p>
+<p>Zhejiang University has 40000 students and provides 2500 courses. Now given the student name lists of all the courses, you are supposed to output the registered course list for each student who comes for a query.</p>
 
-<p>旧键盘上坏了几个键，于是在敲一段文字的时候，对应的字符就不会出现。现在给出应该输入的一段文字、以及坏掉的那些键，打出的结果文字会是怎样？</p>
+<h3 id="input-specification">Input Specification:</h3>
 
-<h3 id="输入格式">输入格式：</h3>
+<p>Each input file contains one test case. For each case, the first line contains 2 positive integers: <em>N</em> (≤40,000), the number of students who look for their course lists, and <em>K</em> (≤2,500), the total number of courses. Then the student name lists are given for the courses (numbered from 1 to <em>K</em>) in the following format: for each course <em>i</em>, first the course index <em>i</em> and the number of registered students *N<strong>i* (≤200) are given in a line. Then in the next line, *N</strong>i* student names are given. A student name consists of 3 capital English letters plus a one-digit number. Finally the last line contains the <em>N</em> names of students who come for a query. All the names and numbers in a line are separated by a space.</p>
 
-<p>输入在 2 行中分别给出坏掉的那些键、以及应该输入的文字。其中对应英文字母的坏键以大写给出；每段文字是不超过 105 个字符的串。可用的字符包括字母 [<code>a</code>-<code>z</code>, <code>A</code>-<code>Z</code>]、数字 <code>0</code>-<code>9</code>、以及下划线 <code>_</code>（代表空格）、<code>,</code>、<code>.</code>、<code>-</code>、<code>+</code>（代表上档键）。题目保证第 2 行输入的文字串非空。</p>
+<h3 id="output-specification">Output Specification:</h3>
 
-<p>注意：如果上档键坏掉了，那么大写的英文字母无法被打出。</p>
+<p>For each test case, print your results in <em>N</em> lines. Each line corresponds to one student, in the following format: first print the student&rsquo;s name, then the total number of registered courses of that student, and finally the indices of the courses in increasing order. The query results must be printed in the same order as input. All the data in a line must be separated by a space, with no extra space at the end of the line.</p>
 
-<h3 id="输出格式">输出格式：</h3>
+<h3 id="sample-input">Sample Input:</h3>
 
-<p>在一行中输出能够被打出的结果文字。如果没有一个字符能被打出，则输出空行。</p>
-
-<h3 id="输入样例">输入样例：</h3>
-
-<pre><code class="language-in">7+IE.
-7_This_is_a_test.   
+<pre><code class="language-in">11 5
+4 7
+BOB5 DON2 FRA8 JAY9 KAT3 LOR6 ZOE1
+1 4
+ANN0 BOB5 JAY9 LOR6
+2 7
+ANN0 BOB5 FRA8 JAY9 JOE4 KAT3 LOR6
+3 1
+BOB5
+5 9
+AMY7 ANN0 BOB5 DON2 FRA8 JAY9 KAT3 LOR6 ZOE1
+ZOE1 ANN0 BOB5 JOE4 JAY9 FRA8 DON2 AMY7 KAT3 LOR6 NON9
 </code></pre>
 
-<h3 id="输出样例">输出样例：</h3>
+<h3 id="sample-output">Sample Output:</h3>
 
-<pre><code class="language-out">_hs_s_a_tst
+<pre><code class="language-out">ZOE1 2 4 5
+ANN0 3 1 2 5
+BOB5 5 1 2 3 4 5
+JOE4 1 2
+JAY9 4 1 2 4 5
+FRA8 3 2 4 5
+DON2 2 4 5
+AMY7 1 5
+KAT3 3 2 4 5
+LOR6 4 1 2 4 5
+NON9 0
 </code></pre>
 
-<h3 id="问题解析">问题解析</h3>
+<h3 id="问题分析">问题分析</h3>
 
-<p>思路就是建立一个hash_table，存储每个字母是否完好，注意‘+’如果损坏，大写字母不输出，而不是输出小写。</p>
+<p>问题给出n个学生，k门课，然后之后给出查询学生的名字，输出他选了哪些课，按照每门课的大小顺序输出。这题直接使用map进行对应后面会超时，所以选择对名字字符串进行hash，加快速度。另一方面，使用vector可以减少内存的使用，因为原题给出的课程数和学生数的乘积过大。</p>
 
 <h3 id="注意事项">注意事项</h3>
 
 <ol>
-<li>‘+’要额外判断</li>
-<li>有一个测试点可能是没有错误，即第一行为空，这种情况下，cin会出现问题，所以使用getline函数。（越来越觉得scanf和printf也不错。。。）</li>
+<li><p>hash的实现方式，对于英文字母＋数字的hash可以使用如下方式实现，注意如果名字中还存在小写字母则改成52进制，即id*52。（注意id= 不是id+=。。。我越界了好久才找到问题所在）</p>
+
+<pre><code class="language-c++">//哈希名字，减少存储空间
+int getId(char name[]) {
+	int id = 0;
+
+	for (int i = 0; i &lt; 3; i++)
+		id = id * 26 + (name[i] - 'A');
+	id = id * 10 + (name[3] - '0');
+
+	return id;
+}
+</code></pre></li>
+
+<li><p>使用cin/cout会超时所以使用print和scanf。</p></li>
+
+<li><p>注意hash之后学生数组的大小，要能够容纳所有的可能，即26 * 26 * 26 * 10。</p></li>
 </ol>
 
 <h3 id="代码实现">代码实现</h3>
 
 <pre><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;vector&gt;
+#include&lt;cstdio&gt;
+#include&lt;algorithm&gt;
 #include&lt;string&gt;
-#include&lt;string.h&gt;
-
 using namespace std;
 
+const int  M = 26 * 26 * 26 * 10 + 1; //哈希的范围，学生散列数组需要这么大
+vector&lt;int&gt; student_course[M];
+
+//哈希名字，减少存储空间
+int getId(char name[]) {
+	int id = 0;
+
+	for (int i = 0; i &lt; 3; i++)
+		id = id * 26 + (name[i] - 'A');
+	id = id * 10 + (name[3] - '0');
+
+	return id;
+}
+
 int main() {
-	string wrong, in, out;
-	bool hash_table[128];         //表示哪些字符是可以输出的
+	//使用char数组代替，string
+	char name[4];
 	
-	memset(hash_table, true, sizeof(hash_table));
+	int n, m;//n查询学生数，m课程数
+	cin &gt;&gt; n &gt;&gt; m;
 
-	//如果键盘没坏，第一行为空，使用cin输入存在问题，所以使用getline输入
-	getline(cin, wrong);
-	getline(cin, in);
+	for (int i = 0; i &lt; m; i++) {
+		int course_num, course_stu; //course_num课程代号，stu课程人数
+		cin &gt;&gt; course_num &gt;&gt; course_stu;
 
-	for (char i : wrong) {
-		hash_table[i] = false;
-		if (i &gt;= 'A' &amp;&amp; i &lt;= 'Z')           //如果说是一个大写字母，则大小写均要改变
-			i = i - 'A' + 'a';
-			hash_table[i] = false;
-	}
+		for (int j = 0; j &lt; course_stu; j++) {
 
-	for (int i = 0; i &lt; in.length(); i++) {
-		if (in[i] &gt;= 'A' &amp;&amp; in[i] &lt;= 'Z') {
-			if (hash_table['+'] == true &amp;&amp; hash_table[in[i]] == true)
-				cout &lt;&lt; in[i];
+			scanf_s(&quot;%s&quot;, name,5);
+			
+			int id = getId(name);
+			student_course[id].push_back(course_num);  //把这门课程添加到该学生的课程中
 		}
-		else if (hash_table[in[i]] == true)
-			cout &lt;&lt; in[i];
 	}
-	cout &lt;&lt; endl;
+
+	for (int i = 0; i &lt; n; i++) {
+	
+		scanf_s(&quot;%s&quot;, name, 5);
+
+		int id = getId(name);
+
+		sort(student_course[id].begin(), student_course[id].end());
+
+		//输出学生姓名和选课数
+		printf(&quot;%s %d&quot;,name, student_course[id].size());
+
+		//输出学生课程号
+		for (vector&lt;int&gt;::iterator it = student_course[id].begin(); it != student_course[id].end(); it++)
+			printf(&quot; %d&quot;, *it);
+
+	/*	for (int j = 0; j &lt; student_course[id].size(); j++)
+			printf(&quot; %d&quot;, student_course[id][j]);*/
+
+		printf(&quot;\n&quot;);
+	}
+
 	return 0;
 }
 </code></pre>
@@ -336,19 +397,19 @@ int main() {
     
 <section class="share">
   <h4>Share this post</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=PAT_B_1033&nbsp;-&nbsp;Cooper%27s%20Blog&amp;url=https%3a%2f%2fhdzxs.github.io%2f2020%2f02%2f14%2fpata_b_1033%2f"
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=PATA_A_1039&nbsp;-&nbsp;Cooper%27s%20Blog&amp;url=https%3a%2f%2fhdzxs.github.io%2f2020%2f02%2f24%2fpata_a_1039%2f"
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
       <span class="hidden">Twitter</span>
   </a>
-  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhdzxs.github.io%2f2020%2f02%2f14%2fpata_b_1033%2f"
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhdzxs.github.io%2f2020%2f02%2f24%2fpata_a_1039%2f"
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f02%2f14%2fpata_b_1033%2f&amp;description=PAT_B_1033"
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f02%2f24%2fpata_a_1039%2f&amp;description=PATA_A_1039"
       onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
       <span class="hidden">Pinterest</span>
   </a>
-  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f02%2f14%2fpata_b_1033%2f"
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f02%2f24%2fpata_a_1039%2f"
      onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
       <span class="hidden">Google+</span>
   </a>
@@ -372,17 +433,10 @@ int main() {
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="background-image: url(/images/road.png)" href="https://hdzxs.github.io/2020/02/16/%E5%9C%A8%E8%B7%AF%E4%B8%8A/">
-          <section class="post">
-              <h2>在路上</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="background-image: url(/images/study1.jpg)" href="https://hdzxs.github.io/2020/02/12/pataa1055/">
+      <a class="read-next-story prev" style="background-image: url(/images/study1.png)" href="https://hdzxs.github.io/2020/02/20/pata_a_1089/">
           <section class="post">
-              <h2>PAT_A_1055</h2>
+              <h2>PAT_A_1089</h2>
           </section>
       </a>
   

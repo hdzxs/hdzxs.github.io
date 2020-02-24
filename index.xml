@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <copyright>All rights reserved - 2019</copyright>
-    <lastBuildDate>Mon, 17 Feb 2020 21:18:14 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 20:16:28 +0800</lastBuildDate>
     
 	<atom:link href="https://hdzxs.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -22,7 +22,25 @@
     </item>
     
     <item>
-      <title>PATA_B_1030</title>
+      <title>PATA_A_1039</title>
+      <link>https://hdzxs.github.io/2020/02/24/pata_a_1039/</link>
+      <pubDate>Mon, 24 Feb 2020 20:16:28 +0800</pubDate>
+      
+      <guid>https://hdzxs.github.io/2020/02/24/pata_a_1039/</guid>
+      <description>&lt;p&gt;PAT_A_1039&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PAT_A_1089</title>
+      <link>https://hdzxs.github.io/2020/02/20/pata_a_1089/</link>
+      <pubDate>Thu, 20 Feb 2020 19:48:16 +0800</pubDate>
+      
+      <guid>https://hdzxs.github.io/2020/02/20/pata_a_1089/</guid>
+      <description>&lt;p&gt;PAY_A_1089&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PAT_B_1030</title>
       <link>https://hdzxs.github.io/2020/02/17/pata_b_1030/</link>
       <pubDate>Mon, 17 Feb 2020 21:18:14 +0800</pubDate>
       
@@ -48,7 +66,7 @@
     </item>
     
     <item>
-      <title>PATA_B_1033</title>
+      <title>PAT_B_1033</title>
       <link>https://hdzxs.github.io/2020/02/14/pata_b_1033/</link>
       <pubDate>Fri, 14 Feb 2020 14:44:11 +0800</pubDate>
       
@@ -57,7 +75,7 @@
     </item>
     
     <item>
-      <title>PATA_A_1055</title>
+      <title>PAT_A_1055</title>
       <link>https://hdzxs.github.io/2020/02/12/pataa1055/</link>
       <pubDate>Wed, 12 Feb 2020 18:32:55 +0800</pubDate>
       
@@ -66,18 +84,16 @@
     </item>
     
     <item>
-      <title>PATA_A_1075</title>
+      <title>PAT_A_1075</title>
       <link>https://hdzxs.github.io/2020/02/12/pataa1075/</link>
       <pubDate>Wed, 12 Feb 2020 18:32:55 +0800</pubDate>
       
       <guid>https://hdzxs.github.io/2020/02/12/pataa1075/</guid>
-      <description>&lt;p&gt;1075 PAT Judge (25分)&lt;/p&gt;
-
-&lt;p&gt;PAT_A_1075&lt;/p&gt;</description>
+      <description>&lt;p&gt;PAT_A_1075&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>PATA_A_1012</title>
+      <title>PAT_A_1012</title>
       <link>https://hdzxs.github.io/2020/02/11/pata_a_1012/</link>
       <pubDate>Tue, 11 Feb 2020 13:48:06 +0800</pubDate>
       
@@ -88,7 +104,7 @@
     </item>
     
     <item>
-      <title>PATA_B_1015</title>
+      <title>PAT_B_1015</title>
       <link>https://hdzxs.github.io/2020/02/10/patab1062/</link>
       <pubDate>Mon, 10 Feb 2020 19:02:44 +0800</pubDate>
       
