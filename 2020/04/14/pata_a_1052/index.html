@@ -14,15 +14,15 @@
 
 
 
-<meta name="twitter:title" content="PATA_A_1051"/>
+<meta name="twitter:title" content="PATA_A_1052"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="PATA_A_1051 &middot; Cooper&#39;s Blog" />
+  	<meta property="og:title" content="PATA_A_1052 &middot; Cooper&#39;s Blog" />
   	<meta property="og:site_name" content="Cooper&#39;s Blog" />
-  	<meta property="og:url" content="https://hdzxs.github.io/2020/04/08/pata_a_1051/" />
+  	<meta property="og:url" content="https://hdzxs.github.io/2020/04/14/pata_a_1052/" />
 
     
        <meta property="og:image" content="/images/study1.jpg"/>
@@ -31,17 +31,17 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2020-04-08T21:36:31&#43;08:00" />
+    <meta property="article:published_time" content="2020-04-14T20:52:17&#43;08:00" />
 
     
     <meta property="article:tag" content="study" />
     
     
 
-    <title>PATA_A_1051 &middot; Cooper&#39;s Blog</title>
+    <title>PATA_A_1052 &middot; Cooper&#39;s Blog</title>
 
     
-    <meta name="description" content="&lt;p&gt;PAT_A_1051&lt;/p&gt;" />
+    <meta name="description" content="&lt;p&gt;PAT_A_1052&lt;/p&gt;" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -64,7 +64,7 @@
     
     <meta name="generator" content="Hugo 0.58.3" />
 
-    <link rel="canonical" href="https://hdzxs.github.io/2020/04/08/pata_a_1051/" />
+    <link rel="canonical" href="https://hdzxs.github.io/2020/04/14/pata_a_1052/" />
 
     
       
@@ -103,17 +103,17 @@
         "description": "Student in Computer Sicence，OUC"
         
     },
-    "headline": "PATA_A_1051",
-    "name": "PATA_A_1051",
-    "wordCount":  511 ,
+    "headline": "PATA_A_1052",
+    "name": "PATA_A_1052",
+    "wordCount":  693 ,
     "timeRequired": "PT2M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://hdzxs.github.io/2020/04/08/pata_a_1051/",
-    "datePublished": "2020-04-08T21:36Z",
-    "dateModified": "2020-04-08T21:36Z",
+    "url": "https://hdzxs.github.io/2020/04/14/pata_a_1052/",
+    "datePublished": "2020-04-14T20:52Z",
+    "dateModified": "2020-04-14T20:52Z",
     
     "image": {
         "@type": "ImageObject",
@@ -126,7 +126,7 @@
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://hdzxs.github.io/2020/04/08/pata_a_1051/"
+        "@id": "https://hdzxs.github.io/2020/04/14/pata_a_1052/"
     }
 }
     </script>
@@ -208,13 +208,13 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">PATA_A_1051</h1>
+        <h1 class="post-title">PATA_A_1052</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2020-04-08T21:36:31&#43;08:00">
-            Apr 8, 2020
+          <time class="post-date" datetime="2020-04-14T20:52:17&#43;08:00">
+            Apr 14, 2020
           </time>
         
          
@@ -224,89 +224,124 @@
     </header>
 
     <section class="post-content">
-      <p>PAT_A_1051</p>
+      <p>PAT_A_1052</p>
 
-<p>Given a stack which can keep <em>M</em> numbers at most. Push <em>N</em> numbers in the order of 1, 2, 3, &hellip;, <em>N</em> and pop randomly. You are supposed to tell if a given sequence of numbers is a possible pop sequence of the stack. For example, if <em>M</em> is 5 and <em>N</em> is 7, we can obtain 1, 2, 3, 4, 5, 6, 7 from the stack, but not 3, 2, 1, 7, 5, 6, 4.</p>
+<p>A linked list consists of a series of structures, which are not necessarily adjacent in memory. We assume that each structure contains an integer <code>key</code> and a <code>Next</code> pointer to the next structure. Now given a linked list, you are supposed to sort the structures according to their key values in increasing order.</p>
 
 <h3 id="input-specification">Input Specification:</h3>
 
-<p>Each input file contains one test case. For each case, the first line contains 3 numbers (all no more than 1000): <em>M</em> (the maximum capacity of the stack), <em>N</em> (the length of push sequence), and <em>K</em> (the number of pop sequences to be checked). Then <em>K</em> lines follow, each contains a pop sequence of <em>N</em> numbers. All the numbers in a line are separated by a space.</p>
+<p>Each input file contains one test case. For each case, the first line contains a positive <em>N</em> (&lt;105) and an address of the head node, where <em>N</em> is the total number of nodes in memory and the address of a node is a 5-digit positive integer. NULL is represented by −1.</p>
+
+<p>Then <em>N</em> lines follow, each describes a node in the format:</p>
+
+<pre><code>Address Key Next
+
+      
+    
+</code></pre>
+
+<p>where <code>Address</code> is the address of the node in memory, <code>Key</code> is an integer in [−105,105], and <code>Next</code> is the address of the next node. It is guaranteed that all the keys are distinct and there is no cycle in the linked list starting from the head node.</p>
 
 <h3 id="output-specification">Output Specification:</h3>
 
-<p>For each pop sequence, print in one line &ldquo;YES&rdquo; if it is indeed a possible pop sequence of the stack, or &ldquo;NO&rdquo; if not.</p>
+<p>For each test case, the output format is the same as that of the input, where <em>N</em> is the total number of nodes in the list and all the nodes must be sorted order.</p>
 
 <h3 id="sample-input">Sample Input:</h3>
 
-<pre><code class="language-in">5 7 5
-1 2 3 4 5 6 7
-3 2 1 7 5 6 4
-7 6 5 4 3 2 1
-5 6 4 3 7 2 1
-1 7 6 5 4 3 2
+<pre><code class="language-in">5 00001
+11111 100 -1
+00001 0 22222
+33333 100000 11111
+12345 -1 33333
+22222 1000 12345
 </code></pre>
 
 <h3 id="sample-output">Sample Output:</h3>
 
-<pre><code class="language-out">YES
-NO
-NO
-YES
-NO
+<pre><code class="language-out">5 12345
+12345 -1 00001
+00001 0 11111
+11111 100 22222
+22222 1000 33333
+33333 100000 -1
 </code></pre>
 
 <h3 id="问题分析">问题分析</h3>
 
-<p>题目要求检测出栈顺序是否正确，我们直接模拟入栈出栈过程，如果出现错误情况：入栈数超出栈的最大数或者最后仍有元素没有出栈，则输出“NO”，否则输出YES</p>
+<p>该题目地址较短，使用今天学习的静态链表解决。开局设置Node表示链表中的点，注意之后会对其排序所以node中药包含add。同时设置flag来表示该点是否有效，之后通过排序抛弃无效点。对于有效的点按照题目要求排序，最后从头输出即可。</p>
 
 <h3 id="注意事项">注意事项</h3>
 
-<p>每次新的检测开始都要清空栈</p>
+<ul>
+<li>排序之后将无效的点排到了后面有效的点在前面，这时候node的地址已经不是最开始输入的地址了，而是1、2、3等，所以需要提前将地址保存下来。</li>
+<li>输出时注意格式控制，还是prinf比较简单。</li>
+<li>因为是在排序时筛选是否有效，所以需要排序的范围是maxn。</li>
+</ul>
 
-<h3 id="题目代码">题目代码</h3>
+<h3 id="代码实现">代码实现</h3>
 
-<pre><code class="language-c++">#include &lt;iostream&gt;
-#include&lt;stack&gt;
-
+<pre><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+#include&lt;stdio.h&gt;
 using namespace std;
 
-int a[1000] = { 0 };
-stack&lt;int&gt; sta;
+
+struct Node{
+	int add;
+	int data;
+	int next;
+	bool flag;
+}node[100000];
+
+bool cmp(Node a, Node b) {
+	if (a.flag == false || b.flag == false) 
+		//如果有一个结点是无效的，则将其放到后面
+		return a.flag &gt; b.flag;
+	else
+		return a.data &lt; b.data;
+}
+
 int main() {
-	
-	int m, n, k; //m表示最大容量、n表示数字、k表示查询次数
-	cin &gt;&gt; m &gt;&gt; n &gt;&gt; k;
-	
+	int n, start;
+	cin &gt;&gt; n &gt;&gt; start;
+	int add, data, next;
+	int count = 0;
 
-	for (int i = 0; i &lt; k; i++) {
-		int index = 0;   //数组游标
-		bool flag = true;
-		while (!sta.empty())          //清空栈
-			sta.pop();            
+	for (int i = 0; i &lt; 100000; i++)
+		node[i].flag = false;
 
-		for (int j = 0; j &lt; n; j++)
-			cin &gt;&gt; a[j];              //初始化数组
-
-		for (int j = 0; j &lt; n; j++) {
-			sta.push(j + 1);
-			if (sta.size() &gt; m) {      //超出范围，结束
-				flag = false;
-				break;
-			}
-
-			while (!sta.empty() &amp;&amp; a[index] == sta.top()) {
-				//cout &lt;&lt; &quot;chuzhan&quot; &lt;&lt; sta.top();
-				sta.pop();
-				index++;
-			}
-
-		}
-		if (sta.empty() &amp;&amp; flag) //必须判断栈是否为空，解决无法全部出栈的情况
-			cout &lt;&lt; &quot;YES&quot; &lt;&lt; endl;
-		else
-			cout &lt;&lt; &quot;NO&quot; &lt;&lt; endl;
+	for (int i = 0; i &lt; n; i++) {
+		cin &gt;&gt; add &gt;&gt; data &gt;&gt; next;
+		
+		node[add].add = add;
+		node[add].data = data;
+		node[add].next = next;
 	}
-	
+
+	for (int i = start; i != -1; i = node[i].next) {
+		node[i].flag = true;
+		count++;
+	}
+
+	sort(node, node + 100000, cmp);
+
+	if (count == 0)
+		cout &lt;&lt; &quot;0 -1&quot;;
+	else {
+		printf(&quot;%d %05d\n&quot;, count,node[0].add);;
+		for (int i = 0; i &lt; count; i++) {
+			
+			printf(&quot;%05d&quot;, node[i].add);
+
+			cout &lt;&lt; &quot; &quot; &lt;&lt; node[i].data &lt;&lt; &quot; &quot;;
+
+			if (i == count - 1)
+				printf(&quot;-1&quot;);
+			else
+				printf(&quot;%05d\n&quot;, node[i+1].add);
+		}
+	}
+
 	return 0;
 }
 </code></pre>
@@ -347,19 +382,19 @@ int main() {
     
 <section class="share">
   <h4>Share this post</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=PATA_A_1051&nbsp;-&nbsp;Cooper%27s%20Blog&amp;url=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f08%2fpata_a_1051%2f"
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=PATA_A_1052&nbsp;-&nbsp;Cooper%27s%20Blog&amp;url=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f14%2fpata_a_1052%2f"
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
       <span class="hidden">Twitter</span>
   </a>
-  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f08%2fpata_a_1051%2f"
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f14%2fpata_a_1052%2f"
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f08%2fpata_a_1051%2f&amp;description=PATA_A_1051"
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f14%2fpata_a_1052%2f&amp;description=PATA_A_1052"
       onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
       <span class="hidden">Pinterest</span>
   </a>
-  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f08%2fpata_a_1051%2f"
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f14%2fpata_a_1052%2f"
      onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
       <span class="hidden">Google+</span>
   </a>
@@ -383,17 +418,10 @@ int main() {
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="background-image: url(/images/study1.jpg)" href="https://hdzxs.github.io/2020/04/14/pata_a_1052/">
-          <section class="post">
-              <h2>PATA_A_1052</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="background-image: url(/images/study1.jpg)" href="https://hdzxs.github.io/2020/02/24/pata_a_1039/">
+      <a class="read-next-story prev" style="background-image: url(/images/study1.jpg)" href="https://hdzxs.github.io/2020/04/08/pata_a_1051/">
           <section class="post">
-              <h2>PATA_A_1039</h2>
+              <h2>PATA_A_1051</h2>
           </section>
       </a>
   
