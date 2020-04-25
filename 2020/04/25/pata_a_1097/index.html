@@ -9,39 +9,39 @@
     
         
         <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:image" content="/images/study1.jpg"/>
+        <meta name="twitter:image" content="/images/study1.png"/>
     
 
 
 
-<meta name="twitter:title" content="PATA_A_1052"/>
+<meta name="twitter:title" content="PATA_A_1097"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="PATA_A_1052 &middot; Cooper&#39;s Blog" />
+  	<meta property="og:title" content="PATA_A_1097 &middot; Cooper&#39;s Blog" />
   	<meta property="og:site_name" content="Cooper&#39;s Blog" />
-  	<meta property="og:url" content="https://hdzxs.github.io/2020/04/14/pata_a_1052/" />
+  	<meta property="og:url" content="https://hdzxs.github.io/2020/04/25/pata_a_1097/" />
 
     
-       <meta property="og:image" content="/images/study1.jpg"/>
+       <meta property="og:image" content="/images/study1.png"/>
     
 
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2020-04-14T20:52:17&#43;08:00" />
+    <meta property="article:published_time" content="2020-04-25T13:03:32&#43;08:00" />
 
     
     <meta property="article:tag" content="study" />
     
     
 
-    <title>PATA_A_1052 &middot; Cooper&#39;s Blog</title>
+    <title>PATA_A_1097 &middot; Cooper&#39;s Blog</title>
 
     
-    <meta name="description" content="&lt;p&gt;PAT_A_1052&lt;/p&gt;" />
+    <meta name="description" content="&lt;p&gt;PAT_A_1097&lt;/p&gt;" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -64,7 +64,7 @@
     
     <meta name="generator" content="Hugo 0.58.3" />
 
-    <link rel="canonical" href="https://hdzxs.github.io/2020/04/14/pata_a_1052/" />
+    <link rel="canonical" href="https://hdzxs.github.io/2020/04/25/pata_a_1097/" />
 
     
       
@@ -103,21 +103,21 @@
         "description": "Student in Computer Sicence，OUC"
         
     },
-    "headline": "PATA_A_1052",
-    "name": "PATA_A_1052",
-    "wordCount":  693 ,
+    "headline": "PATA_A_1097",
+    "name": "PATA_A_1097",
+    "wordCount":  865 ,
     "timeRequired": "PT2M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://hdzxs.github.io/2020/04/14/pata_a_1052/",
-    "datePublished": "2020-04-14T20:52Z",
-    "dateModified": "2020-04-14T20:52Z",
+    "url": "https://hdzxs.github.io/2020/04/25/pata_a_1097/",
+    "datePublished": "2020-04-25T13:03Z",
+    "dateModified": "2020-04-25T13:03Z",
     
     "image": {
         "@type": "ImageObject",
-        "url": "https://hdzxs.github.io//images/study1.jpg",
+        "url": "https://hdzxs.github.io/images/study1.png",
         "width": 3000,
         "height": 1445
     },
@@ -126,7 +126,7 @@
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://hdzxs.github.io/2020/04/14/pata_a_1052/"
+        "@id": "https://hdzxs.github.io/2020/04/25/pata_a_1097/"
     }
 }
     </script>
@@ -184,7 +184,7 @@
 
 
   
-  <header class="main-header post-head" style="background-image: url(/images/study1.jpg)">
+  <header class="main-header post-head" style="background-image: url(/images/study1.png)">
   
   <nav class="main-nav overlay clearfix">
 
@@ -208,13 +208,13 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">PATA_A_1052</h1>
+        <h1 class="post-title">PATA_A_1097</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2020-04-14T20:52:17&#43;08:00">
-            Apr 14, 2020
+          <time class="post-date" datetime="2020-04-25T13:03:32&#43;08:00">
+            Apr 25, 2020
           </time>
         
          
@@ -224,125 +224,141 @@
     </header>
 
     <section class="post-content">
-      <p>PAT_A_1052</p>
+      <p>PAT_A_1097</p>
 
-<p>A linked list consists of a series of structures, which are not necessarily adjacent in memory. We assume that each structure contains an integer <code>key</code> and a <code>Next</code> pointer to the next structure. Now given a linked list, you are supposed to sort the structures according to their key values in increasing order.</p>
+<p>Given a singly linked list <em>L</em> with integer keys, you are supposed to remove the nodes with duplicated absolute values of the keys. That is, for each value <em>K</em>, only the first node of which the value or absolute value of its key equals <em>K</em> will be kept. At the mean time, all the removed nodes must be kept in a separate list. For example, given <em>L</em> being 21→-15→-15→-7→15, you must output 21→-15→-7, and the removed list -15→15.</p>
 
 <h3 id="input-specification">Input Specification:</h3>
 
-<p>Each input file contains one test case. For each case, the first line contains a positive <em>N</em> (&lt;105) and an address of the head node, where <em>N</em> is the total number of nodes in memory and the address of a node is a 5-digit positive integer. NULL is represented by −1.</p>
+<p>Each input file contains one test case. For each case, the first line contains the address of the first node, and a positive <em>N</em> (≤105) which is the total number of nodes. The address of a node is a 5-digit nonnegative integer, and NULL is represented by −1.</p>
 
 <p>Then <em>N</em> lines follow, each describes a node in the format:</p>
 
-<pre><code>Address Key Next
-
-      
-    
+<pre><code>Address Key Next    
 </code></pre>
 
-<p>where <code>Address</code> is the address of the node in memory, <code>Key</code> is an integer in [−105,105], and <code>Next</code> is the address of the next node. It is guaranteed that all the keys are distinct and there is no cycle in the linked list starting from the head node.</p>
+<p>where <code>Address</code> is the position of the node, <code>Key</code> is an integer of which absolute value is no more than 104, and <code>Next</code> is the position of the next node.</p>
 
 <h3 id="output-specification">Output Specification:</h3>
 
-<p>For each test case, the output format is the same as that of the input, where <em>N</em> is the total number of nodes in the list and all the nodes must be sorted order.</p>
+<p>For each case, output the resulting linked list first, then the removed list. Each node occupies a line, and is printed in the same format as in the input.</p>
 
 <h3 id="sample-input">Sample Input:</h3>
 
-<pre><code class="language-in">5 00001
-11111 100 -1
-00001 0 22222
-33333 100000 11111
-12345 -1 33333
-22222 1000 12345
+<pre><code class="language-in">00100 5
+99999 -7 87654
+23854 -15 00000
+87654 15 -1
+00000 -15 99999
+00100 21 23854   
 </code></pre>
 
 <h3 id="sample-output">Sample Output:</h3>
 
-<pre><code class="language-out">5 12345
-12345 -1 00001
-00001 0 11111
-11111 100 22222
-22222 1000 33333
-33333 100000 -1
+<pre><code class="language-out">00100 21 23854
+23854 -15 99999
+99999 -7 -1
+00000 -15 87654
+87654 15 -1
 </code></pre>
 
 <h3 id="问题分析">问题分析</h3>
 
-<p>该题目地址较短，使用今天学习的静态链表解决。开局设置Node表示链表中的点，注意之后会对其排序所以node中药包含add。同时设置flag来表示该点是否有效，之后通过排序抛弃无效点。对于有效的点按照题目要求排序，最后从头输出即可。</p>
+<p>链表问题，首先创建一个静态链表，创建一个数组用来判断是否已存在。读入数据之后，从start开始遍历，对于首次发现的存入ans链表，对于已存在的存入del链表（因为题目要求输出被删除结点）。</p>
 
 <h3 id="注意事项">注意事项</h3>
 
 <ul>
-<li>排序之后将无效的点排到了后面有效的点在前面，这时候node的地址已经不是最开始输入的地址了，而是1、2、3等，所以需要提前将地址保存下来。</li>
-<li>输出时注意格式控制，还是prinf比较简单。</li>
-<li>因为是在排序时筛选是否有效，所以需要排序的范围是maxn。</li>
+<li>注意数组大小，每次总开一样大小的数组，以后要大一点，否则对于数据量比较大的会有问题。</li>
+<li>静态链表存储的时候按照节点存储，但是最后输出可以从零开始，只需要把每个节点的地址也保存进去node中，而不是作为真正的数组地址。</li>
+<li>书中给出的解决方案只利用了一个链表，利用maxn作为分界线，将无效结点作为2*maxn。我因为分成了多个链表所以不需要考虑无效结点的问题。如果是这种做法，需要在node中添加一个flag来说代表无效结点。</li>
+<li>注意输出格式，最后一个节点要输出-1，注意要输出五位数，利用printf更加简单。</li>
 </ul>
 
 <h3 id="代码实现">代码实现</h3>
 
 <pre><code class="language-c++">#include&lt;iostream&gt;
 #include&lt;algorithm&gt;
-#include&lt;stdio.h&gt;
+#include&lt;math.h&gt;
 using namespace std;
 
-
 struct Node{
-	int add;
-	int data;
 	int next;
-	bool flag;
-}node[100000];
+	int data;
+	int address;
+}nodes[100022],ans[100022],delnodes[100022];
 
-bool cmp(Node a, Node b) {
-	if (a.flag == false || b.flag == false) 
-		//如果有一个结点是无效的，则将其放到后面
-		return a.flag &gt; b.flag;
-	else
-		return a.data &lt; b.data;
-}
+int pd[10002] = { 0 };
 
 int main() {
-	int n, start;
-	cin &gt;&gt; n &gt;&gt; start;
-	int add, data, next;
-	int count = 0;
+	int start, n;
+	int delcount = 0, count = 0;
+	int index = 0, delindex = 0;
+	int num = 0;                            //暂时的绝对值
 
-	for (int i = 0; i &lt; 100000; i++)
-		node[i].flag = false;
+	cin &gt;&gt; start &gt;&gt; n;
 
+	int address, data, next;
 	for (int i = 0; i &lt; n; i++) {
-		cin &gt;&gt; add &gt;&gt; data &gt;&gt; next;
 		
-		node[add].add = add;
-		node[add].data = data;
-		node[add].next = next;
+		cin &gt;&gt; address &gt;&gt; data &gt;&gt; next;
+
+		nodes[address].address = address;
+		nodes[address].data = data;
+		nodes[address].next = next;
+
 	}
 
-	for (int i = start; i != -1; i = node[i].next) {
-		node[i].flag = true;
-		count++;
-	}
-
-	sort(node, node + 100000, cmp);
-
-	if (count == 0)
-		cout &lt;&lt; &quot;0 -1&quot;;
-	else {
-		printf(&quot;%d %05d\n&quot;, count,node[0].add);;
-		for (int i = 0; i &lt; count; i++) {
+	for (int i = start; i != -1; i = nodes[i].next) {
+		
+		num = abs(nodes[i].data);
+		
+		if (pd[num] == 0) {
+			//cout &lt;&lt; &quot;asdasd&quot;&lt;&lt;num;
+			ans[index] = nodes[i];
 			
-			printf(&quot;%05d&quot;, node[i].add);
+			if (index != 0)
+				ans[index - 1].next = ans[index].address;
 
-			cout &lt;&lt; &quot; &quot; &lt;&lt; node[i].data &lt;&lt; &quot; &quot;;
-
-			if (i == count - 1)
-				printf(&quot;-1&quot;);
-			else
-				printf(&quot;%05d\n&quot;, node[i+1].add);
+			index++;
+			count++;
+			pd[num] = 1;
 		}
+		else { //删除掉结点，并将其存储起来
+			delnodes[delindex] = nodes[i];
+
+			if (delindex != 0)
+				delnodes[delindex - 1].next = delnodes[delindex].address;
+
+			delindex++;
+			delcount++;				//记录删除掉的结点数
+		}
+				
+	}
+
+	for (int i = 0; i &lt;count; i++) {
+
+		printf(&quot;%05d &quot;, ans[i].address);
+		printf(&quot;%d &quot;, ans[i].data);
+		if (i != count - 1)
+			printf(&quot;%05d\n&quot;, ans[i].next);
+		else
+			printf(&quot;%d\n&quot;, -1);
+		
+	}
+
+	for (int i = 0; i &lt; delcount; i++) {
+
+		printf(&quot;%05d &quot;, delnodes[i].address);
+		printf(&quot;%d &quot;, delnodes[i].data);
+		if (i != delcount - 1)
+			printf(&quot;%05d\n&quot;, delnodes[i].next);
+		else
+			printf(&quot;%d\n&quot;, -1);
 	}
 
 	return 0;
+
 }
 </code></pre>
     </section>
@@ -382,19 +398,19 @@ int main() {
     
 <section class="share">
   <h4>Share this post</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=PATA_A_1052&nbsp;-&nbsp;Cooper%27s%20Blog&amp;url=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f14%2fpata_a_1052%2f"
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=PATA_A_1097&nbsp;-&nbsp;Cooper%27s%20Blog&amp;url=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f25%2fpata_a_1097%2f"
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
       <span class="hidden">Twitter</span>
   </a>
-  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f14%2fpata_a_1052%2f"
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f25%2fpata_a_1097%2f"
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f14%2fpata_a_1052%2f&amp;description=PATA_A_1052"
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f25%2fpata_a_1097%2f&amp;description=PATA_A_1097"
       onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
       <span class="hidden">Pinterest</span>
   </a>
-  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f14%2fpata_a_1052%2f"
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f04%2f25%2fpata_a_1097%2f"
      onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
       <span class="hidden">Google+</span>
   </a>
@@ -418,17 +434,10 @@ int main() {
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="background-image: url(/images/study1.png)" href="https://hdzxs.github.io/2020/04/25/pata_a_1097/">
-          <section class="post">
-              <h2>PATA_A_1097</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="background-image: url(/images/study1.jpg)" href="https://hdzxs.github.io/2020/04/08/pata_a_1051/">
+      <a class="read-next-story prev" style="background-image: url(/images/study1.jpg)" href="https://hdzxs.github.io/2020/04/14/pata_a_1052/">
           <section class="post">
-              <h2>PATA_A_1051</h2>
+              <h2>PATA_A_1052</h2>
           </section>
       </a>
   
