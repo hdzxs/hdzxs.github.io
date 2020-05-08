@@ -241,7 +241,7 @@
 <p>第二步：先算7∗7得4949，则7的5次方为49*49*749∗49∗7，再算它的平方，共进行了4次乘法。模仿这样的过程，我们得到一个在 时间内计算出幂的算法，也就是快速幂。(此处借用了部分知乎上的内容)
  方法二运用的无非是一个二分的思路，因此我们可以很轻松的得到一个递归方程:</p>
 
-<p><img src="D:websitestaticimagesimage-20200508233525101.png" alt="image-20200508233525101" /></p>
+<p><img src="https://hdzxs.github.io/images/image-20200508233525101.png" alt="image-20200508233525101" /></p>
 
 <p>  因此我们可以比较自然的写出递归解法如下：</p>
 
@@ -270,7 +270,7 @@ public:
 
 <p>递归算法还有额外的空间开销，所以我们考虑是否可以用迭代的方式解决问题。观察下图，我们可以发现，可以利用二进制数来判断，当前位置对最终结果是否有贡献：</p>
 
-<p><img src="D:websitestaticimagesimage-20200508234719078.png" alt="image-20200508234719078" /></p>
+<p><img src="https://hdzxs.github.io/images/image-20200508234719078.png" alt="image-20200508234719078" /></p>
 
 <pre><code class="language-c++">using LL = long long;
 class Solution {
