@@ -42,26 +42,6 @@
   </url>
   
   <url>
-    <loc>https://hdzxs.github.io/categories/essay/</loc>
-    <lastmod>2020-05-08T23:24:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hdzxs.github.io/tags/essay/</loc>
-    <lastmod>2020-05-08T23:24:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hdzxs.github.io/tags/hugo/</loc>
-    <lastmod>2020-05-08T23:24:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hdzxs.github.io/2020/05/08/default/</loc>
-    <lastmod>2020-05-08T23:24:40+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://hdzxs.github.io/2020/04/25/pata_a_1097/</loc>
     <lastmod>2020-04-25T13:03:32+08:00</lastmod>
   </url>
@@ -89,6 +69,16 @@
   <url>
     <loc>https://hdzxs.github.io/2020/02/17/pata_b_1030/</loc>
     <lastmod>2020-02-17T21:18:14+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdzxs.github.io/categories/essay/</loc>
+    <lastmod>2020-02-16T20:54:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdzxs.github.io/tags/essay/</loc>
+    <lastmod>2020-02-16T20:54:44+08:00</lastmod>
   </url>
   
   <url>
@@ -149,6 +139,11 @@
   <url>
     <loc>https://hdzxs.github.io/2019/11/04/%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
     <lastmod>2019-11-04T13:26:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hdzxs.github.io/tags/hugo/</loc>
+    <lastmod>2019-10-30T17:02:26+08:00</lastmod>
   </url>
   
   <url>
