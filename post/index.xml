@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <copyright>All rights reserved - 2019</copyright>
-    <lastBuildDate>Sat, 25 Apr 2020 13:03:32 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2020 23:25:13 +0800</lastBuildDate>
     
 	<atom:link href="https://hdzxs.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>快速幂</title>
+      <link>https://hdzxs.github.io/2020/05/08/%E5%BF%AB%E9%80%9F%E5%B9%82/</link>
+      <pubDate>Fri, 08 May 2020 23:25:13 +0800</pubDate>
+      
+      <guid>https://hdzxs.github.io/2020/05/08/%E5%BF%AB%E9%80%9F%E5%B9%82/</guid>
+      <description>&lt;p&gt;做题的时候后遇到了快速幂问题，代码不长，属于看了就会，不看就不会的问题。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Post</title>
+      <link>https://hdzxs.github.io/2020/05/08/default/</link>
+      <pubDate>Fri, 08 May 2020 23:24:40 +0800</pubDate>
+      
+      <guid>https://hdzxs.github.io/2020/05/08/default/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>PATA_A_1097</title>
