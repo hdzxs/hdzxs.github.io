@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <copyright>All rights reserved - 2019</copyright>
-    <lastBuildDate>Fri, 08 May 2020 23:25:13 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2020 01:12:45 +0800</lastBuildDate>
     
 	<atom:link href="https://hdzxs.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,15 @@
       
       <guid>https://hdzxs.github.io/archive/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>跳跃游戏</title>
+      <link>https://hdzxs.github.io/2020/05/10/%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F/</link>
+      <pubDate>Sun, 10 May 2020 01:12:45 +0800</pubDate>
+      
+      <guid>https://hdzxs.github.io/2020/05/10/%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F/</guid>
+      <description>&lt;p&gt;leetcode——question55，跳跃游戏，一个贪心问题。&lt;/p&gt;</description>
     </item>
     
     <item>
