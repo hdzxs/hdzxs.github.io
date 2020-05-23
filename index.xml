@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <copyright>All rights reserved - 2019</copyright>
-    <lastBuildDate>Sun, 10 May 2020 01:12:45 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2020 23:11:20 +0800</lastBuildDate>
     
 	<atom:link href="https://hdzxs.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,15 @@
       
       <guid>https://hdzxs.github.io/archive/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>荷兰国旗</title>
+      <link>https://hdzxs.github.io/2020/05/23/%E8%8D%B7%E5%85%B0%E5%9B%BD%E6%97%97/</link>
+      <pubDate>Sat, 23 May 2020 23:11:20 +0800</pubDate>
+      
+      <guid>https://hdzxs.github.io/2020/05/23/%E8%8D%B7%E5%85%B0%E5%9B%BD%E6%97%97/</guid>
+      <description>&lt;p&gt;颜色分类，即荷兰国旗问题，算法简单经典。&lt;/p&gt;</description>
     </item>
     
     <item>
