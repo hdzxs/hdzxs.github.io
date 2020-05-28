@@ -14,15 +14,15 @@
 
 
 
-<meta name="twitter:title" content="荷兰国旗"/>
+<meta name="twitter:title" content="合并区间"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="荷兰国旗 &middot; Cooper&#39;s Blog" />
+  	<meta property="og:title" content="合并区间 &middot; Cooper&#39;s Blog" />
   	<meta property="og:site_name" content="Cooper&#39;s Blog" />
-  	<meta property="og:url" content="https://hdzxs.github.io/2020/05/23/%E8%8D%B7%E5%85%B0%E5%9B%BD%E6%97%97/" />
+  	<meta property="og:url" content="https://hdzxs.github.io/2020/05/28/%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4/" />
 
     
        <meta property="og:image" content="/images/study3.jpg"/>
@@ -31,7 +31,7 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2020-05-23T23:11:20&#43;08:00" />
+    <meta property="article:published_time" content="2020-05-28T19:12:31&#43;08:00" />
 
     
     <meta property="article:tag" content="study" />
@@ -40,10 +40,10 @@
     
     
 
-    <title>荷兰国旗 &middot; Cooper&#39;s Blog</title>
+    <title>合并区间 &middot; Cooper&#39;s Blog</title>
 
     
-    <meta name="description" content="&lt;p&gt;颜色分类，即荷兰国旗问题，多个指针同时扫描解决。&lt;/p&gt;" />
+    <meta name="description" content="&lt;p&gt;合并区间问题，算法笔记上也曾出现，leetcode又遇到了，记录下来。&lt;/p&gt;" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -66,7 +66,7 @@
     
     <meta name="generator" content="Hugo 0.58.3" />
 
-    <link rel="canonical" href="https://hdzxs.github.io/2020/05/23/%E8%8D%B7%E5%85%B0%E5%9B%BD%E6%97%97/" />
+    <link rel="canonical" href="https://hdzxs.github.io/2020/05/28/%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4/" />
 
     
       
@@ -105,17 +105,17 @@
         "description": "Student in Computer Sicence，OUC"
         
     },
-    "headline": "荷兰国旗",
-    "name": "荷兰国旗",
-    "wordCount":  429 ,
-    "timeRequired": "PT1M",
+    "headline": "合并区间",
+    "name": "合并区间",
+    "wordCount":  510 ,
+    "timeRequired": "PT2M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://hdzxs.github.io/2020/05/23/%E8%8D%B7%E5%85%B0%E5%9B%BD%E6%97%97/",
-    "datePublished": "2020-05-23T23:11Z",
-    "dateModified": "2020-05-23T23:11Z",
+    "url": "https://hdzxs.github.io/2020/05/28/%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4/",
+    "datePublished": "2020-05-28T19:12Z",
+    "dateModified": "2020-05-28T19:12Z",
     
     "image": {
         "@type": "ImageObject",
@@ -128,7 +128,7 @@
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://hdzxs.github.io/2020/05/23/%E8%8D%B7%E5%85%B0%E5%9B%BD%E6%97%97/"
+        "@id": "https://hdzxs.github.io/2020/05/28/%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4/"
     }
 }
     </script>
@@ -210,13 +210,13 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">荷兰国旗</h1>
+        <h1 class="post-title">合并区间</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2020-05-23T23:11:20&#43;08:00">
-            May 23, 2020
+          <time class="post-date" datetime="2020-05-28T19:12:31&#43;08:00">
+            May 28, 2020
           </time>
         
          
@@ -228,50 +228,69 @@
     </header>
 
     <section class="post-content">
-      <p>颜色分类，即荷兰国旗问题，多个指针同时扫描解决。</p>
+      <p>合并区间问题，算法笔记上也曾出现，leetcode又遇到了，记录下来。</p>
 
 <h3 id="问题重述">问题重述</h3>
 
-<p>给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。</p>
+<p>给出一个区间的集合，请合并所有重叠的区间。</p>
 
-<p>此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。</p>
+<p>示例 1:</p>
 
-<p>注意:
-不能使用代码库中的排序函数来解决这道题。</p>
+<p>输入: [[1,3],[2,6],[8,10],[15,18]]</p>
 
-<p>示例:</p>
+<p>输出: [[1,6],[8,10],[15,18]]</p>
 
-<p>输入: [2,0,2,1,1,0]
-输出: [0,0,1,1,2,2]
-进阶：</p>
+<p>解释: 区间 [1,3] 和 [2,6] 重叠, 将它们合并为 [1,6].</p>
 
-<p>一个直观的解决方案是使用计数排序的两趟扫描算法。
-首先，迭代计算出0、1 和 2 元素的个数，然后按照0、1、2的排序，重写当前数组。
-你能想出一个仅使用常数空间的一趟扫描算法吗？</p>
+<p>示例 2:</p>
 
-<h3 id="解题思路">解题思路</h3>
+<p>输入: [[1,4],[4,5]]</p>
 
-<p>设置三个指针，分别指向0的最右端p0，2的最左端p2和现在正在扫描的数curr。如果该数是0，则与p0交换，p0+1；如果是2，则与p2交换，p2-1。交换之后，如果是0或者1，curr+1，向下移动；<strong>如果是2，因为当前交换过来的数还没有被判断过，所以curr不动。对当前数进行判断。</strong></p>
+<p>输出: [[1,5]]</p>
+
+<p>解释: 区间 [1,4] 和 [4,5] 可被视为重叠区间。</p>
+
+<h3 id="问题分析">问题分析</h3>
+
+<p>合并区间第一步是将区间按照左端由小到大排序，<strong>排序之后，可以合并的区间一定是相邻的。</strong>如下图所示：</p>
+
+<p><img src="https://pic.leetcode-cn.com/50417462969bd13230276c0847726c0909873d22135775ef4022e806475d763e-56-2.png" alt="56-2.png" /></p>
+
+<p>排序之后，我们设置一个数组专门用来用来存放答案：merged。然后遍历每一个区间，对于每一个区间有两种情况：</p>
+
+<ol>
+<li>如果当前区间的左端点在数组 <code>merged</code> 中最后一个区间的右端点之后，那么它们不会重合，我们可以直接将这个区间加入数组 <code>merged</code> 的末尾；</li>
+<li>否则，它们重合，我们需要用当前区间的右端点更新数组 <code>merged</code> 中最后一个区间的右端点，将其置为二者的较大值。</li>
+</ol>
 
 <h3 id="代码实现">代码实现</h3>
 
 <pre><code class="language-c++">class Solution {
 public:
-    void sortColors(vector&lt;int&gt;&amp; nums) {
-        int p0 = 0, curr = 0;
-        int p2 = nums.size()-1;
-
-        while(curr &lt;= p2){
-            if(nums[curr] == 0)
-                swap(nums[curr++], nums[p0++]);
-            else if(nums[curr] == 2) 
-                swap(nums[curr], nums[p2--]);
-            else
-                curr++;
+    vector&lt;vector&lt;int&gt;&gt; merge(vector&lt;vector&lt;int&gt;&gt;&amp; intervals) {
+        if (intervals.size() == 0) {
+            return {};
         }
+        sort(intervals.begin(), intervals.end());
+        vector&lt;vector&lt;int&gt;&gt; merged;
+        for (int i = 0; i &lt; intervals.size(); ++i) {
+            int L = intervals[i][0], R = intervals[i][1];
+            if (!merged.size() || merged.back()[1] &lt; L) {
+                merged.push_back({L, R});
+            }
+            else {
+                merged.back()[1] = max(merged.back()[1], R);
+            }
+        }
+        return merged;
     }
 };
+
 </code></pre>
+
+<h3 id="注意事项">注意事项</h3>
+
+<p>除了合并区间本身，对于二维数组的使用，也是很重要的一个点：vector&lt;&lt; vector &gt; int &gt;用来表示二维数组。back函数，调用最后一个元组的引用，所以这个使用了merged.back()[1]来表示最后一个元组的右边界。</p>
     </section>
 
 
@@ -309,19 +328,19 @@ public:
     
 <section class="share">
   <h4>Share this post</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e8%8d%b7%e5%85%b0%e5%9b%bd%e6%97%97&nbsp;-&nbsp;Cooper%27s%20Blog&amp;url=https%3a%2f%2fhdzxs.github.io%2f2020%2f05%2f23%2f%25E8%258D%25B7%25E5%2585%25B0%25E5%259B%25BD%25E6%2597%2597%2f"
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e5%90%88%e5%b9%b6%e5%8c%ba%e9%97%b4&nbsp;-&nbsp;Cooper%27s%20Blog&amp;url=https%3a%2f%2fhdzxs.github.io%2f2020%2f05%2f28%2f%25E5%2590%2588%25E5%25B9%25B6%25E5%258C%25BA%25E9%2597%25B4%2f"
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
       <span class="hidden">Twitter</span>
   </a>
-  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhdzxs.github.io%2f2020%2f05%2f23%2f%25E8%258D%25B7%25E5%2585%25B0%25E5%259B%25BD%25E6%2597%2597%2f"
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhdzxs.github.io%2f2020%2f05%2f28%2f%25E5%2590%2588%25E5%25B9%25B6%25E5%258C%25BA%25E9%2597%25B4%2f"
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f05%2f23%2f%25E8%258D%25B7%25E5%2585%25B0%25E5%259B%25BD%25E6%2597%2597%2f&amp;description=%e8%8d%b7%e5%85%b0%e5%9b%bd%e6%97%97"
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f05%2f28%2f%25E5%2590%2588%25E5%25B9%25B6%25E5%258C%25BA%25E9%2597%25B4%2f&amp;description=%e5%90%88%e5%b9%b6%e5%8c%ba%e9%97%b4"
       onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
       <span class="hidden">Pinterest</span>
   </a>
-  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f05%2f23%2f%25E8%258D%25B7%25E5%2585%25B0%25E5%259B%25BD%25E6%2597%2597%2f"
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fhdzxs.github.io%2f2020%2f05%2f28%2f%25E5%2590%2588%25E5%25B9%25B6%25E5%258C%25BA%25E9%2597%25B4%2f"
      onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
       <span class="hidden">Google+</span>
   </a>
@@ -345,17 +364,10 @@ public:
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="background-image: url(/images/study3.jpg)" href="https://hdzxs.github.io/2020/05/28/%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4/">
-          <section class="post">
-              <h2>合并区间</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="background-image: url(/images/study2.jpg)" href="https://hdzxs.github.io/2020/05/10/%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F/">
+      <a class="read-next-story prev" style="background-image: url(/images/study3.jpg)" href="https://hdzxs.github.io/2020/05/23/%E8%8D%B7%E5%85%B0%E5%9B%BD%E6%97%97/">
           <section class="post">
-              <h2>跳跃游戏</h2>
+              <h2>荷兰国旗</h2>
           </section>
       </a>
   
